@@ -1,0 +1,845 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="mainModel.Store" Provider="System.Data.SQLite.EF6" ProviderManifestToken="data source=C:\Users\Erik\AppData\Roaming\Skype\computercrash1\main.db" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Accounts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+    <Property Name="status" Type="integer" />
+    <Property Name="pwdchangestatus" Type="integer" />
+    <Property Name="logoutreason" Type="integer" />
+    <Property Name="commitstatus" Type="integer" />
+    <Property Name="suggested_skypename" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="skypeout_balance_currency" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="skypeout_balance" Type="integer" />
+    <Property Name="skypeout_precision" Type="integer" />
+    <Property Name="skypein_numbers" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="subscriptions" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="cblsyncstatus" Type="integer" />
+    <Property Name="offline_callforward" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="chat_policy" Type="integer" />
+    <Property Name="skype_call_policy" Type="integer" />
+    <Property Name="pstn_call_policy" Type="integer" />
+    <Property Name="avatar_policy" Type="integer" />
+    <Property Name="buddycount_policy" Type="integer" />
+    <Property Name="timezone_policy" Type="integer" />
+    <Property Name="webpresence_policy" Type="integer" />
+    <Property Name="phonenumbers_policy" Type="integer" />
+    <Property Name="voicemail_policy" Type="integer" />
+    <Property Name="authrequest_policy" Type="integer" />
+    <Property Name="ad_policy" Type="integer" />
+    <Property Name="partner_optedout" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="service_provider_info" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="registration_timestamp" Type="integer" />
+    <Property Name="nr_of_other_instances" Type="integer" />
+    <Property Name="partner_channel_status" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="flamingo_xmpp_status" Type="integer" />
+    <Property Name="federated_presence_policy" Type="integer" />
+    <Property Name="owner_under_legal_age" Type="integer" />
+    <Property Name="type" Type="integer" />
+    <Property Name="skypename" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="pstnnumber" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="fullname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="birthday" Type="integer" />
+    <Property Name="gender" Type="integer" />
+    <Property Name="languages" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="country" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="province" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="city" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="phone_home" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="phone_office" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="phone_mobile" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="emails" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="homepage" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="about" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="profile_timestamp" Type="integer" />
+    <Property Name="received_authrequest" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="displayname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="refreshing" Type="integer" />
+    <Property Name="given_authlevel" Type="integer" />
+    <Property Name="aliases" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="authreq_timestamp" Type="integer" />
+    <Property Name="mood_text" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="timezone" Type="integer" />
+    <Property Name="nrof_authed_buddies" Type="integer" />
+    <Property Name="ipcountry" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="given_displayname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="availability" Type="integer" />
+    <Property Name="lastonline_timestamp" Type="integer" />
+    <Property Name="capabilities" Type="blob" />
+    <Property Name="avatar_image" Type="blob" />
+    <Property Name="assigned_speeddial" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="lastused_timestamp" Type="integer" />
+    <Property Name="authrequest_count" Type="integer" />
+    <Property Name="assigned_comment" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="alertstring" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="avatar_timestamp" Type="integer" />
+    <Property Name="mood_timestamp" Type="integer" />
+    <Property Name="rich_mood_text" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="synced_email" Type="blob" />
+    <Property Name="set_availability" Type="integer" />
+    <Property Name="options_change_future" Type="blob" />
+    <Property Name="cbl_profile_blob" Type="blob" />
+    <Property Name="authorized_time" Type="integer" />
+    <Property Name="sent_authrequest" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="sent_authrequest_time" Type="integer" />
+    <Property Name="sent_authrequest_serial" Type="integer" />
+    <Property Name="buddyblob" Type="blob" />
+    <Property Name="cbl_future" Type="blob" />
+    <Property Name="node_capabilities" Type="integer" />
+    <Property Name="node_capabilities_and" Type="integer" />
+    <Property Name="revoked_auth" Type="integer" />
+    <Property Name="added_in_shared_group" Type="integer" />
+    <Property Name="in_shared_group" Type="integer" />
+    <Property Name="authreq_history" Type="blob" />
+    <Property Name="profile_attachments" Type="blob" />
+    <Property Name="stack_version" Type="integer" />
+    <Property Name="offline_authreq_id" Type="integer" />
+    <Property Name="verified_email" Type="blob" />
+    <Property Name="verified_company" Type="blob" />
+    <Property Name="liveid_membername" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="roaming_history_enabled" Type="integer" />
+    <Property Name="uses_jcs" Type="integer" />
+    <Property Name="cobrand_id" Type="integer" />
+    <Property Name="shortcircuit_sync" Type="integer" />
+    <Property Name="signin_name" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="msa_pmn" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="Alerts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+    <Property Name="timestamp" Type="integer" />
+    <Property Name="partner_name" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="is_unseen" Type="integer" />
+    <Property Name="partner_id" Type="integer" />
+    <Property Name="partner_event" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="partner_history" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="partner_header" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="partner_logo" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="meta_expiry" Type="integer" />
+    <Property Name="message_header_caption" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="message_header_title" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="message_header_subject" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="message_header_cancel" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="message_header_later" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="message_content" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="message_footer" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="message_button_caption" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="message_button_uri" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="message_type" Type="integer" />
+    <Property Name="window_size" Type="integer" />
+    <Property Name="chatmsg_guid" Type="blob" />
+    <Property Name="notification_id" Type="integer" />
+    <Property Name="event_flags" Type="integer" />
+    <Property Name="extprop_hide_from_history" Type="integer" />
+  </EntityType>
+  <!--Während der Generierung sind Fehler aufgetreten:
+Warnung 6002: Für Tabelle/Sicht 'main.AppSchemaVersion' ist kein Primärschlüssel definiert. Der Schlüssel wurde abgeleitet, und die Definition wurde als schreibgeschützte Tabelle/Sicht erstellt.-->
+  <EntityType Name="AppSchemaVersion">
+    <Key>
+      <PropertyRef Name="ClientVersion" />
+      <PropertyRef Name="SQLiteSchemaVersion" />
+      <PropertyRef Name="SchemaUpdateType" />
+    </Key>
+    <Property Name="ClientVersion" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+    <Property Name="SQLiteSchemaVersion" Type="integer" Nullable="false" />
+    <Property Name="SchemaUpdateType" Type="integer" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CallMembers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+    <Property Name="identity" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="dispname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="languages" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="call_duration" Type="integer" />
+    <Property Name="price_per_minute" Type="integer" />
+    <Property Name="price_precision" Type="integer" />
+    <Property Name="price_currency" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="payment_category" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="type" Type="integer" />
+    <Property Name="status" Type="integer" />
+    <Property Name="failurereason" Type="integer" />
+    <Property Name="sounderror_code" Type="integer" />
+    <Property Name="soundlevel" Type="integer" />
+    <Property Name="pstn_statustext" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="pstn_feedback" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="forward_targets" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="forwarded_by" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="debuginfo" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="videostatus" Type="integer" />
+    <Property Name="target_identity" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="mike_status" Type="integer" />
+    <Property Name="is_read_only" Type="integer" />
+    <Property Name="quality_status" Type="integer" />
+    <Property Name="call_name" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="transfer_status" Type="integer" />
+    <Property Name="transfer_active" Type="integer" />
+    <Property Name="transferred_by" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="transferred_to" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="guid" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="next_redial_time" Type="integer" />
+    <Property Name="nrof_redials_done" Type="integer" />
+    <Property Name="nrof_redials_left" Type="integer" />
+    <Property Name="transfer_topic" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="real_identity" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="start_timestamp" Type="integer" />
+    <Property Name="is_conference" Type="integer" />
+    <Property Name="quality_problems" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="identity_type" Type="integer" />
+    <Property Name="country" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="creation_timestamp" Type="integer" />
+    <Property Name="stats_xml" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="is_premium_video_sponsor" Type="integer" />
+    <Property Name="is_multiparty_video_capable" Type="integer" />
+    <Property Name="recovery_in_progress" Type="integer" />
+    <Property Name="nonse_word" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="pk_status" Type="integer" />
+    <Property Name="call_db_id" Type="integer" />
+    <Property Name="prime_status" Type="integer" />
+    <Property Name="nr_of_delivered_push_notifications" Type="integer" />
+    <Property Name="call_session_guid" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="version_string" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="fallback_in_progress" Type="integer" />
+    <Property Name="ip_address" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="is_video_codec_compatible" Type="integer" />
+    <Property Name="is_seamlessly_upgraded_call" Type="integer" />
+    <Property Name="voicechannel" Type="integer" />
+  </EntityType>
+  <EntityType Name="Calls">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+    <Property Name="begin_timestamp" Type="integer" />
+    <Property Name="topic" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="is_muted" Type="integer" />
+    <Property Name="is_unseen_missed" Type="integer" />
+    <Property Name="host_identity" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="mike_status" Type="integer" />
+    <Property Name="duration" Type="integer" />
+    <Property Name="soundlevel" Type="integer" />
+    <Property Name="access_token" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="active_members" Type="integer" />
+    <Property Name="is_active" Type="integer" />
+    <Property Name="name" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="video_disabled" Type="integer" />
+    <Property Name="joined_existing" Type="integer" />
+    <Property Name="server_identity" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="vaa_input_status" Type="integer" />
+    <Property Name="is_incoming" Type="integer" />
+    <Property Name="is_conference" Type="integer" />
+    <Property Name="is_on_hold" Type="integer" />
+    <Property Name="start_timestamp" Type="integer" />
+    <Property Name="quality_problems" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="current_video_audience" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="premium_video_status" Type="integer" />
+    <Property Name="premium_video_is_grace_period" Type="integer" />
+    <Property Name="is_premium_video_sponsor" Type="integer" />
+    <Property Name="premium_video_sponsor_list" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="old_members" Type="blob" />
+    <Property Name="partner_handle" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="partner_dispname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="type" Type="integer" />
+    <Property Name="status" Type="integer" />
+    <Property Name="failurereason" Type="integer" />
+    <Property Name="failurecode" Type="integer" />
+    <Property Name="pstn_number" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="old_duration" Type="integer" />
+    <Property Name="conf_participants" Type="blob" />
+    <Property Name="pstn_status" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="members" Type="blob" />
+    <Property Name="conv_dbid" Type="integer" />
+    <Property Name="technology" Type="integer" />
+  </EntityType>
+  <EntityType Name="ChatMembers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+    <Property Name="chatname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="identity" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="role" Type="integer" />
+    <Property Name="is_active" Type="integer" />
+    <Property Name="cur_activities" Type="integer" />
+    <Property Name="adder" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="Chats">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+    <Property Name="name" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="options" Type="integer" />
+    <Property Name="friendlyname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="description" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="timestamp" Type="integer" />
+    <Property Name="activity_timestamp" Type="integer" />
+    <Property Name="dialog_partner" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="adder" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="type" Type="integer" />
+    <Property Name="mystatus" Type="integer" />
+    <Property Name="myrole" Type="integer" />
+    <Property Name="posters" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="participants" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="applicants" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="banned_users" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="name_text" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="topic" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="topic_xml" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="guidelines" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="picture" Type="blob" />
+    <Property Name="alertstring" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="is_bookmarked" Type="integer" />
+    <Property Name="passwordhint" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="unconsumed_suppressed_msg" Type="integer" />
+    <Property Name="unconsumed_normal_msg" Type="integer" />
+    <Property Name="unconsumed_elevated_msg" Type="integer" />
+    <Property Name="unconsumed_msg_voice" Type="integer" />
+    <Property Name="activemembers" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="state_data" Type="blob" />
+    <Property Name="lifesigns" Type="integer" />
+    <Property Name="last_change" Type="integer" />
+    <Property Name="first_unread_message" Type="integer" />
+    <Property Name="pk_type" Type="integer" />
+    <Property Name="dbpath" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="split_friendlyname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="conv_dbid" Type="integer" />
+  </EntityType>
+  <EntityType Name="ContactGroups">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+    <Property Name="type" Type="integer" />
+    <Property Name="custom_group_id" Type="integer" />
+    <Property Name="given_displayname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="nrofcontacts" Type="integer" />
+    <Property Name="nrofcontacts_online" Type="integer" />
+    <Property Name="given_sortorder" Type="integer" />
+    <Property Name="type_old" Type="integer" />
+    <Property Name="proposer" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="description" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="associated_chat" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="members" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="cbl_id" Type="integer" />
+    <Property Name="cbl_blob" Type="blob" />
+    <Property Name="fixed" Type="integer" />
+    <Property Name="keep_sharedgroup_contacts" Type="integer" />
+    <Property Name="chats" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="extprop_is_hidden" Type="integer" />
+    <Property Name="extprop_sortorder_value" Type="integer" />
+    <Property Name="extprop_is_expanded" Type="integer" />
+    <Property Name="abch_guid" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="Contacts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+    <Property Name="type" Type="integer" />
+    <Property Name="skypename" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="pstnnumber" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="aliases" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="fullname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="birthday" Type="integer" />
+    <Property Name="gender" Type="integer" />
+    <Property Name="languages" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="country" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="province" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="city" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="phone_home" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="phone_office" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="phone_mobile" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="emails" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="hashed_emails" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="homepage" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="about" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="avatar_image" Type="blob" />
+    <Property Name="mood_text" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="rich_mood_text" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="timezone" Type="integer" />
+    <Property Name="capabilities" Type="blob" />
+    <Property Name="profile_timestamp" Type="integer" />
+    <Property Name="nrof_authed_buddies" Type="integer" />
+    <Property Name="ipcountry" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="avatar_timestamp" Type="integer" />
+    <Property Name="mood_timestamp" Type="integer" />
+    <Property Name="received_authrequest" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="authreq_timestamp" Type="integer" />
+    <Property Name="lastonline_timestamp" Type="integer" />
+    <Property Name="availability" Type="integer" />
+    <Property Name="displayname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="firstname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="lastname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="refreshing" Type="integer" />
+    <Property Name="given_authlevel" Type="integer" />
+    <Property Name="given_displayname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="assigned_speeddial" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="assigned_comment" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="alertstring" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="lastused_timestamp" Type="integer" />
+    <Property Name="authrequest_count" Type="integer" />
+    <Property Name="assigned_phone1" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="assigned_phone1_label" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="assigned_phone2" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="assigned_phone2_label" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="assigned_phone3" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="assigned_phone3_label" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="is_mobile" Type="integer" />
+    <Property Name="is_trusted" Type="integer" />
+    <Property Name="buddystatus" Type="integer" />
+    <Property Name="isauthorized" Type="integer" />
+    <Property Name="popularity_ord" Type="integer" />
+    <Property Name="external_id" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="external_system_id" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="isblocked" Type="integer" />
+    <Property Name="authorization_certificate" Type="blob" />
+    <Property Name="certificate_send_count" Type="integer" />
+    <Property Name="account_modification_serial_nr" Type="integer" />
+    <Property Name="saved_directory_blob" Type="blob" />
+    <Property Name="nr_of_buddies" Type="integer" />
+    <Property Name="server_synced" Type="integer" />
+    <Property Name="contactlist_track" Type="integer" />
+    <Property Name="last_used_networktime" Type="integer" />
+    <Property Name="network_availability" Type="integer" />
+    <Property Name="authorized_time" Type="integer" />
+    <Property Name="sent_authrequest" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="sent_authrequest_time" Type="integer" />
+    <Property Name="sent_authrequest_serial" Type="integer" />
+    <Property Name="buddyblob" Type="blob" />
+    <Property Name="cbl_future" Type="blob" />
+    <Property Name="node_capabilities" Type="integer" />
+    <Property Name="revoked_auth" Type="integer" />
+    <Property Name="added_in_shared_group" Type="integer" />
+    <Property Name="in_shared_group" Type="integer" />
+    <Property Name="authreq_history" Type="blob" />
+    <Property Name="profile_attachments" Type="blob" />
+    <Property Name="stack_version" Type="integer" />
+    <Property Name="offline_authreq_id" Type="integer" />
+    <Property Name="node_capabilities_and" Type="integer" />
+    <Property Name="authreq_crc" Type="integer" />
+    <Property Name="authreq_src" Type="integer" />
+    <Property Name="pop_score" Type="integer" />
+    <Property Name="authreq_nodeinfo" Type="blob" />
+    <Property Name="main_phone" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="unified_servants" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="phone_home_normalized" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="phone_office_normalized" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="phone_mobile_normalized" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="sent_authrequest_initmethod" Type="integer" />
+    <Property Name="authreq_initmethod" Type="integer" />
+    <Property Name="verified_email" Type="blob" />
+    <Property Name="verified_company" Type="blob" />
+    <Property Name="sent_authrequest_extrasbitmask" Type="integer" />
+    <Property Name="liveid_cid" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="is_auto_buddy" Type="integer" />
+    <Property Name="group_membership" Type="integer" />
+    <Property Name="avatar_url" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="extprop_seen_birthday" Type="integer" />
+    <Property Name="extprop_sms_target" Type="integer" />
+    <Property Name="extprop_external_data" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="Conversations">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+    <Property Name="identity" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="type" Type="integer" />
+    <Property Name="live_host" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="live_start_timestamp" Type="integer" />
+    <Property Name="live_is_muted" Type="integer" />
+    <Property Name="alert_string" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="is_bookmarked" Type="integer" />
+    <Property Name="given_displayname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="displayname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="local_livestatus" Type="integer" />
+    <Property Name="inbox_timestamp" Type="integer" />
+    <Property Name="inbox_message_id" Type="integer" />
+    <Property Name="unconsumed_suppressed_messages" Type="integer" />
+    <Property Name="unconsumed_normal_messages" Type="integer" />
+    <Property Name="unconsumed_elevated_messages" Type="integer" />
+    <Property Name="unconsumed_messages_voice" Type="integer" />
+    <Property Name="active_vm_id" Type="integer" />
+    <Property Name="context_horizon" Type="integer" />
+    <Property Name="consumption_horizon" Type="integer" />
+    <Property Name="last_activity_timestamp" Type="integer" />
+    <Property Name="active_invoice_message" Type="integer" />
+    <Property Name="spawned_from_convo_id" Type="integer" />
+    <Property Name="pinned_order" Type="integer" />
+    <Property Name="creator" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="creation_timestamp" Type="integer" />
+    <Property Name="my_status" Type="integer" />
+    <Property Name="opt_joining_enabled" Type="integer" />
+    <Property Name="opt_access_token" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="opt_entry_level_rank" Type="integer" />
+    <Property Name="opt_disclose_history" Type="integer" />
+    <Property Name="opt_history_limit_in_days" Type="integer" />
+    <Property Name="opt_admin_only_activities" Type="integer" />
+    <Property Name="passwordhint" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="meta_name" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="meta_topic" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="meta_guidelines" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="meta_picture" Type="blob" />
+    <Property Name="premium_video_status" Type="integer" />
+    <Property Name="premium_video_is_grace_period" Type="integer" />
+    <Property Name="guid" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="dialog_partner" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="meta_description" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="premium_video_sponsor_list" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="chat_dbid" Type="integer" />
+    <Property Name="history_horizon" Type="integer" />
+    <Property Name="extprop_profile_height" Type="integer" />
+    <Property Name="extprop_chat_width" Type="integer" />
+    <Property Name="extprop_chat_left_margin" Type="integer" />
+    <Property Name="extprop_chat_right_margin" Type="integer" />
+    <Property Name="extprop_entry_height" Type="integer" />
+    <Property Name="extprop_windowpos_x" Type="integer" />
+    <Property Name="extprop_windowpos_y" Type="integer" />
+    <Property Name="extprop_windowpos_w" Type="integer" />
+    <Property Name="extprop_windowpos_h" Type="integer" />
+    <Property Name="extprop_window_maximized" Type="integer" />
+    <Property Name="extprop_window_detached" Type="integer" />
+    <Property Name="extprop_pinned_order" Type="integer" />
+    <Property Name="extprop_new_in_inbox" Type="integer" />
+    <Property Name="extprop_tab_order" Type="integer" />
+    <Property Name="extprop_video_layout" Type="integer" />
+    <Property Name="extprop_video_chat_height" Type="integer" />
+    <Property Name="extprop_chat_avatar" Type="integer" />
+    <Property Name="extprop_consumption_timestamp" Type="integer" />
+    <Property Name="extprop_form_visible" Type="integer" />
+    <Property Name="extprop_recovery_mode" Type="integer" />
+    <Property Name="mcr_caller" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="history_sync_state" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="live_call_technology" Type="integer" />
+    <Property Name="is_blocked" Type="integer" />
+    <Property Name="last_message_id" Type="integer" />
+    <Property Name="picture" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="is_p2p_migrated" Type="integer" />
+    <Property Name="translationLanguages" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="thread_version" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="consumption_horizon_set_at" Type="integer" />
+    <Property Name="alt_identity" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="in_migrated_thread_since" Type="integer" />
+    <Property Name="awareness_liveState" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="extprop_translator_enabled" Type="integer" />
+    <Property Name="extprop_translator_call_my_lang" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="extprop_translator_call_other_lang" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="extprop_translator_chat_my_lang" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="extprop_translator_chat_other_lang" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="DbMeta">
+    <Key>
+      <PropertyRef Name="key" />
+    </Key>
+    <Property Name="key" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+    <Property Name="value" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="LegacyMessages">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+  </EntityType>
+  <EntityType Name="MediaDocuments">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+    <Property Name="storage_document_id" Type="integer" />
+    <Property Name="status" Type="integer" />
+    <Property Name="doc_type" Type="integer" />
+    <Property Name="uri" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="original_name" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="title" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="description" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="thumbnail_url" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="web_url" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="mime_type" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="type" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="service" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="consumption_status" Type="integer" />
+    <Property Name="convo_id" Type="integer" />
+    <Property Name="message_id" Type="integer" />
+  </EntityType>
+  <EntityType Name="Messages">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+    <Property Name="convo_id" Type="integer" />
+    <Property Name="chatname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="author" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="from_dispname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="author_was_live" Type="integer" />
+    <Property Name="guid" Type="blob" />
+    <Property Name="dialog_partner" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="timestamp" Type="integer" />
+    <Property Name="type" Type="integer" />
+    <Property Name="sending_status" Type="integer" />
+    <Property Name="consumption_status" Type="integer" />
+    <Property Name="edited_by" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="edited_timestamp" Type="integer" />
+    <Property Name="param_key" Type="integer" />
+    <Property Name="param_value" Type="integer" />
+    <Property Name="body_xml" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="identities" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="reason" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="leavereason" Type="integer" />
+    <Property Name="participant_count" Type="integer" />
+    <Property Name="error_code" Type="integer" />
+    <Property Name="chatmsg_type" Type="integer" />
+    <Property Name="chatmsg_status" Type="integer" />
+    <Property Name="body_is_rawxml" Type="integer" />
+    <Property Name="oldoptions" Type="integer" />
+    <Property Name="newoptions" Type="integer" />
+    <Property Name="newrole" Type="integer" />
+    <Property Name="pk_id" Type="integer" />
+    <Property Name="crc" Type="integer" />
+    <Property Name="remote_id" Type="integer" />
+    <Property Name="call_guid" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="extprop_contact_review_date" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="extprop_contact_received_stamp" Type="integer" />
+    <Property Name="extprop_contact_reviewed" Type="integer" />
+    <Property Name="option_bits" Type="integer" />
+  </EntityType>
+  <EntityType Name="Participants">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+    <Property Name="convo_id" Type="integer" />
+    <Property Name="identity" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="rank" Type="integer" />
+    <Property Name="requested_rank" Type="integer" />
+    <Property Name="text_status" Type="integer" />
+    <Property Name="voice_status" Type="integer" />
+    <Property Name="live_identity" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="live_price_for_me" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="live_fwd_identities" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="live_start_timestamp" Type="integer" />
+    <Property Name="sound_level" Type="integer" />
+    <Property Name="debuginfo" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="next_redial_time" Type="integer" />
+    <Property Name="nrof_redials_left" Type="integer" />
+    <Property Name="last_voice_error" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="quality_problems" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="live_type" Type="integer" />
+    <Property Name="live_country" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="transferred_by" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="transferred_to" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="adder" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="last_leavereason" Type="integer" />
+    <Property Name="is_premium_video_sponsor" Type="integer" />
+    <Property Name="is_multiparty_video_capable" Type="integer" />
+    <Property Name="live_identity_to_use" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="livesession_recovery_in_progress" Type="integer" />
+    <Property Name="livesession_fallback_in_progress" Type="integer" />
+    <Property Name="is_multiparty_video_updatable" Type="integer" />
+    <Property Name="live_ip_address" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="is_video_codec_compatible" Type="integer" />
+    <Property Name="is_seamlessly_upgraded_call" Type="integer" />
+    <Property Name="live_voicechannel" Type="integer" />
+    <Property Name="real_identity" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="adding_in_progress_since" Type="integer" />
+  </EntityType>
+  <EntityType Name="SMSes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+    <Property Name="type" Type="integer" />
+    <Property Name="outgoing_reply_type" Type="integer" />
+    <Property Name="status" Type="integer" />
+    <Property Name="failurereason" Type="integer" />
+    <Property Name="is_failed_unseen" Type="integer" />
+    <Property Name="timestamp" Type="integer" />
+    <Property Name="price" Type="integer" />
+    <Property Name="price_precision" Type="integer" />
+    <Property Name="price_currency" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="reply_to_number" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="target_numbers" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="target_statuses" Type="blob" />
+    <Property Name="body" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="chatmsg_id" Type="integer" />
+    <Property Name="identity" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="notification_id" Type="integer" />
+    <Property Name="event_flags" Type="integer" />
+    <Property Name="reply_id_number" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="convo_name" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="extprop_hide_from_history" Type="integer" />
+    <Property Name="extprop_extended" Type="integer" />
+    <Property Name="error_category" Type="integer" />
+  </EntityType>
+  <EntityType Name="tracker_journal">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="dbID" Type="integer" />
+    <Property Name="type" Type="integer" />
+    <Property Name="change" Type="integer" />
+  </EntityType>
+  <EntityType Name="Transfers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+    <Property Name="type" Type="integer" />
+    <Property Name="partner_handle" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="partner_dispname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="status" Type="integer" />
+    <Property Name="failurereason" Type="integer" />
+    <Property Name="starttime" Type="integer" />
+    <Property Name="finishtime" Type="integer" />
+    <Property Name="filepath" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="filename" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="filesize" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="bytestransferred" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="bytespersecond" Type="integer" />
+    <Property Name="chatmsg_guid" Type="blob" />
+    <Property Name="chatmsg_index" Type="integer" />
+    <Property Name="convo_id" Type="integer" />
+    <Property Name="pk_id" Type="integer" />
+    <Property Name="nodeid" Type="blob" />
+    <Property Name="last_activity" Type="integer" />
+    <Property Name="flags" Type="integer" />
+    <Property Name="old_status" Type="integer" />
+    <Property Name="old_filepath" Type="integer" />
+    <Property Name="accepttime" Type="integer" />
+    <Property Name="extprop_localfilename" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="extprop_hide_from_history" Type="integer" />
+    <Property Name="extprop_window_visible" Type="integer" />
+    <Property Name="extprop_handled_by_chat" Type="integer" />
+    <Property Name="parent_id" Type="integer" />
+    <Property Name="offer_send_list" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="Translators">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+  </EntityType>
+  <EntityType Name="VideoMessages">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+    <Property Name="qik_id" Type="blob" />
+    <Property Name="attached_msg_ids" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="sharing_id" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="status" Type="integer" />
+    <Property Name="vod_status" Type="integer" />
+    <Property Name="vod_path" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="local_path" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="public_link" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="progress" Type="integer" />
+    <Property Name="title" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="description" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="author" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="creation_timestamp" Type="integer" />
+    <Property Name="type" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="Videos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+    <Property Name="status" Type="integer" />
+    <Property Name="error" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="debuginfo" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="dimensions" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="media_type" Type="integer" />
+    <Property Name="duration_1080" Type="integer" />
+    <Property Name="duration_720" Type="integer" />
+    <Property Name="duration_hqv" Type="integer" />
+    <Property Name="duration_vgad2" Type="integer" />
+    <Property Name="duration_ltvgad2" Type="integer" />
+    <Property Name="timestamp" Type="integer" />
+    <Property Name="hq_present" Type="integer" />
+    <Property Name="duration_ss" Type="integer" />
+    <Property Name="ss_timestamp" Type="integer" />
+    <Property Name="convo_id" Type="integer" />
+    <Property Name="device_path" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="device_name" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="Voicemails">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" Nullable="false" />
+    <Property Name="is_permanent" Type="integer" />
+    <Property Name="type" Type="integer" />
+    <Property Name="partner_handle" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="partner_dispname" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="status" Type="integer" />
+    <Property Name="failurereason" Type="integer" />
+    <Property Name="subject" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="timestamp" Type="integer" />
+    <Property Name="duration" Type="integer" />
+    <Property Name="allowed_duration" Type="integer" />
+    <Property Name="playback_progress" Type="integer" />
+    <Property Name="convo_id" Type="integer" />
+    <Property Name="chatmsg_guid" Type="blob" />
+    <Property Name="notification_id" Type="integer" />
+    <Property Name="flags" Type="integer" />
+    <Property Name="size" Type="integer" />
+    <Property Name="path" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="failures" Type="integer" />
+    <Property Name="vflags" Type="integer" />
+    <Property Name="xmsg" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="extprop_hide_from_history" Type="integer" />
+  </EntityType>
+  <EntityContainer Name="mainModelStoreContainer">
+    <EntitySet Name="Accounts" EntityType="Self.Accounts" store:Type="Tables" />
+    <EntitySet Name="Alerts" EntityType="Self.Alerts" store:Type="Tables" />
+    <EntitySet Name="CallMembers" EntityType="Self.CallMembers" store:Type="Tables" />
+    <EntitySet Name="Calls" EntityType="Self.Calls" store:Type="Tables" />
+    <EntitySet Name="ChatMembers" EntityType="Self.ChatMembers" store:Type="Tables" />
+    <EntitySet Name="Chats" EntityType="Self.Chats" store:Type="Tables" />
+    <EntitySet Name="ContactGroups" EntityType="Self.ContactGroups" store:Type="Tables" />
+    <EntitySet Name="Contacts" EntityType="Self.Contacts" store:Type="Tables" />
+    <EntitySet Name="Conversations" EntityType="Self.Conversations" store:Type="Tables" />
+    <EntitySet Name="DbMeta" EntityType="Self.DbMeta" store:Type="Tables" />
+    <EntitySet Name="LegacyMessages" EntityType="Self.LegacyMessages" store:Type="Tables" />
+    <EntitySet Name="MediaDocuments" EntityType="Self.MediaDocuments" store:Type="Tables" />
+    <EntitySet Name="Messages" EntityType="Self.Messages" store:Type="Tables" />
+    <EntitySet Name="Participants" EntityType="Self.Participants" store:Type="Tables" />
+    <EntitySet Name="SMSes" EntityType="Self.SMSes" store:Type="Tables" />
+    <EntitySet Name="tracker_journal" EntityType="Self.tracker_journal" store:Type="Tables" />
+    <EntitySet Name="Transfers" EntityType="Self.Transfers" store:Type="Tables" />
+    <EntitySet Name="Translators" EntityType="Self.Translators" store:Type="Tables" />
+    <EntitySet Name="VideoMessages" EntityType="Self.VideoMessages" store:Type="Tables" />
+    <EntitySet Name="Videos" EntityType="Self.Videos" store:Type="Tables" />
+    <EntitySet Name="Voicemails" EntityType="Self.Voicemails" store:Type="Tables" />
+    <EntitySet Name="AppSchemaVersion" EntityType="Self.AppSchemaVersion" store:Type="Tables">
+      <DefiningQuery>SELECT 
+[AppSchemaVersion].[ClientVersion] AS [ClientVersion], 
+[AppSchemaVersion].[SQLiteSchemaVersion] AS [SQLiteSchemaVersion], 
+[AppSchemaVersion].[SchemaUpdateType] AS [SchemaUpdateType]
+FROM [AppSchemaVersion] AS [AppSchemaVersion]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

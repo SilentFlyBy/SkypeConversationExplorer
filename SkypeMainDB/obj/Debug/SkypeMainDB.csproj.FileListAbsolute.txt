@@ -1,0 +1,9 @@
+c:\users\erik\documents\visual studio 2015\Projects\SkypeConversationExplorer\SkypeMainDB\bin\Debug\SkypeMainDB.dll.config
+c:\users\erik\documents\visual studio 2015\Projects\SkypeConversationExplorer\SkypeMainDB\bin\Debug\SkypeMainDB.dll
+c:\users\erik\documents\visual studio 2015\Projects\SkypeConversationExplorer\SkypeMainDB\bin\Debug\SkypeMainDB.pdb
+c:\users\erik\documents\visual studio 2015\Projects\SkypeConversationExplorer\SkypeMainDB\bin\Debug\EntityFramework.dll
+c:\users\erik\documents\visual studio 2015\Projects\SkypeConversationExplorer\SkypeMainDB\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\erik\documents\visual studio 2015\Projects\SkypeConversationExplorer\SkypeMainDB\bin\Debug\EntityFramework.xml
+c:\users\erik\documents\visual studio 2015\Projects\SkypeConversationExplorer\SkypeMainDB\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\erik\documents\visual studio 2015\Projects\SkypeConversationExplorer\SkypeMainDB\obj\Debug\SkypeMainDB.dll
+c:\users\erik\documents\visual studio 2015\Projects\SkypeConversationExplorer\SkypeMainDB\obj\Debug\SkypeMainDB.pdb

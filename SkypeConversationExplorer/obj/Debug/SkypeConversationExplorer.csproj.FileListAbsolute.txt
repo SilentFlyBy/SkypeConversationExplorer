@@ -1,0 +1,1 @@
+c:\users\erik\documents\visual studio 2015\Projects\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\SkypeConversationExplorer.exe.config
