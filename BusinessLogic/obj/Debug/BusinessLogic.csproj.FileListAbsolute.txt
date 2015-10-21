@@ -1,0 +1,9 @@
+C:\Users\Erik\Repositories\SkypeConversationExplorer\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\Erik\Repositories\SkypeConversationExplorer\BusinessLogic\bin\Debug\SkypeMainDB.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\BusinessLogic\bin\Debug\EntityFramework.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\BusinessLogic\bin\Debug\SkypeMainDB.pdb
+C:\Users\Erik\Repositories\SkypeConversationExplorer\BusinessLogic\bin\Debug\EntityFramework.xml
+C:\Users\Erik\Repositories\SkypeConversationExplorer\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\Erik\Repositories\SkypeConversationExplorer\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\BusinessLogic\obj\Debug\BusinessLogic.pdb

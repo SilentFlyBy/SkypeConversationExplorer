@@ -1,1 +1,24 @@
 c:\users\erik\documents\visual studio 2015\Projects\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\SkypeConversationExplorer.exe.config
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\SkypeConversationExplorer.exe.config
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\SkypeConversationExplorer.exe
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\SkypeConversationExplorer.pdb
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\obj\Debug\SkypeConversationExplorer.csprojResolveAssemblyReference.cache
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\obj\Debug\SkypeConversationExplorer.Properties.Resources.resources
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\obj\Debug\SkypeConversationExplorer.csproj.GenerateResource.Cache
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\obj\Debug\SkypeConversationExplorer.exe
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\obj\Debug\SkypeConversationExplorer.pdb
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\BusinessLogic.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\SkypeMainDB.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\EntityFramework.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\BusinessLogic.pdb
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\SkypeMainDB.pdb
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\EntityFramework.xml
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\System.Data.SQLite.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\System.Data.SQLite.xml
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\de\EntityFramework.resources.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\de\EntityFramework.SqlServer.resources.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\obj\Debug\SkypeConversationExplorer.MainForm.resources

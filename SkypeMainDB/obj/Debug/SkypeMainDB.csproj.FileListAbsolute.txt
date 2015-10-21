@@ -7,3 +7,13 @@ c:\users\erik\documents\visual studio 2015\Projects\SkypeConversationExplorer\Sk
 c:\users\erik\documents\visual studio 2015\Projects\SkypeConversationExplorer\SkypeMainDB\bin\Debug\EntityFramework.SqlServer.xml
 c:\users\erik\documents\visual studio 2015\Projects\SkypeConversationExplorer\SkypeMainDB\obj\Debug\SkypeMainDB.dll
 c:\users\erik\documents\visual studio 2015\Projects\SkypeConversationExplorer\SkypeMainDB\obj\Debug\SkypeMainDB.pdb
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\obj\Debug\SkypeMainDB.csprojResolveAssemblyReference.cache
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\obj\Debug\SkypeMainDB.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\obj\Debug\SkypeMainDB.pdb
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\bin\Debug\SkypeMainDB.dll.config
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\bin\Debug\SkypeMainDB.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\bin\Debug\SkypeMainDB.pdb
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\bin\Debug\EntityFramework.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\bin\Debug\EntityFramework.xml
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\bin\Debug\EntityFramework.SqlServer.xml

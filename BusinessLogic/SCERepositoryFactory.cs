@@ -11,12 +11,17 @@ namespace BusinessLogic
 {
     public class SCERepositoryFactory : ISCERepositoryFactory
     {
+        private IMainDbRepositoryFactory MainDbFactory;
+        public SCERepositoryFactory()
+        {
+            MainDbFactory = new MainDbRepositoryFactory();
+        }
         public T CreateRepository<T>() where T : class
         {
-            if(typeof(IMainDbRepository).IsAssignableFrom(typeof(T))) { 
-
+            if(typeof(IMainDbRepository).IsAssignableFrom(typeof(T))) {
+                return (T)typeof(MainDbRepositoryFactory).GetMethod("CreateRepository").MakeGenericMethod(typeof(T)).Invoke(MainDbFactory, null);
             }
-            throw new NotImplementedException();
+            throw new ArgumentException("Repository type not supported");
         }
     }
 }
