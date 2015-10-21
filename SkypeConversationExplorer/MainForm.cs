@@ -1,5 +1,7 @@
 ﻿using BusinessLogic;
+using BusinessLogic.Interfaces;
 using SkypeMainDB;
+using SkypeMainDB.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,14 +19,16 @@ namespace SkypeConversationExplorer
     public partial class MainForm : Form
     {
         ContactProcessor contactProcessor;
-        MessageProcessor messageProcessor;
+        ISCERepositoryFactory Factory;
         string selectedContact = "";
         List<Messages> messageList;
+        DateTime? dateFrom = null;
+        DateTime? dateTo = null;
 
         public MainForm()
         {
             contactProcessor = new ContactProcessor();
-            messageProcessor = new MessageProcessor();
+            Factory = new SCERepositoryFactory();
 
             InitializeComponent();
         }
@@ -37,9 +41,34 @@ namespace SkypeConversationExplorer
 
         private void PopulateMessageList()
         {
-            messageProcessor.retrieveMessages(selectedContact);
-            messageList = messageProcessor.Messages.ToList();
-            int i = 1;
+            if (dateFrom != null && dateTo != null)
+            {
+                messageList = Factory.CreateRepository<IMessageRepository>().GetByAccountNameFromTo(selectedContact, dateFrom.Value, dateTo.Value).OrderBy(t => t.timestamp).ToList();
+            }
+            else if (dateFrom != null)
+            {
+                messageList = Factory.CreateRepository<IMessageRepository>().GetByAccountNameFrom(selectedContact, dateFrom.Value).OrderBy(t => t.timestamp).ToList();
+            }
+            else if (dateTo != null)
+            {
+                messageList = Factory.CreateRepository<IMessageRepository>().GetByAccountNameTo(selectedContact, dateTo.Value).OrderBy(t => t.timestamp).ToList();
+            }
+            else
+            {
+                messageList = Factory.CreateRepository<IMessageRepository>().GetByAccountName(selectedContact).OrderBy(t => t.timestamp).ToList();
+            }
+
+            messageListView.Items.Clear();
+
+            foreach (Messages message in messageList)
+            {
+                ListViewItem item = new ListViewItem(Utils.TimestampToDateTime(message.timestamp.Value).ToString());
+                item.SubItems.Add(message.author);
+                item.SubItems.Add(message.body_xml);
+
+                messageListView.Items.Add(item);
+            }
+
         }
 
 
@@ -49,8 +78,10 @@ namespace SkypeConversationExplorer
             {
                 File.Copy(openMainDbDialog.FileName, ".\\maintemp.db", true);
                 FillContactList();
+                tabControl.Enabled = true;
+                mainDbPathTextBox.Text = openMainDbDialog.FileName;
             }
-            
+
         }
 
         private void FillContactList()
@@ -61,17 +92,40 @@ namespace SkypeConversationExplorer
         private void contactBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             selectedContact = contactBox.SelectedItem.ToString();
+            messageListView.Items.Clear();
             PopulateMessageList();
         }
 
         private void dateFromCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             dateFromPicker.Enabled = dateFromCheckBox.Checked ? true : false;
+            if (!dateFromCheckBox.Checked)
+            {
+                dateFrom = null;
+                PopulateMessageList();
+            }
         }
 
         private void dateToCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             dateToPicker.Enabled = dateToCheckBox.Checked ? true : false;
+            if (!dateToCheckBox.Checked)
+            {
+                dateTo = null;
+                PopulateMessageList();
+            }
+        }
+
+        private void dateFromPicker_ValueChanged(object sender, EventArgs e)
+        {
+            dateFrom = dateFromPicker.Value.Date;
+            PopulateMessageList();
+        }
+
+        private void dateToPicker_ValueChanged(object sender, EventArgs e)
+        {
+            dateTo = dateToPicker.Value.Date;
+            PopulateMessageList();
         }
     }
 }

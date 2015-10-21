@@ -28,61 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.mainDbPathTextBox = new System.Windows.Forms.TextBox();
+            this.openMainDbButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.openMainDbDialog = new System.Windows.Forms.OpenFileDialog();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.messageListView = new System.Windows.Forms.ListView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dateToCheckBox = new System.Windows.Forms.CheckBox();
+            this.dateFromCheckBox = new System.Windows.Forms.CheckBox();
             this.dateToPicker = new System.Windows.Forms.DateTimePicker();
             this.dateFromPicker = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.contactBox = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dateFromCheckBox = new System.Windows.Forms.CheckBox();
-            this.dateToCheckBox = new System.Windows.Forms.CheckBox();
+            this.Timestamp = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Author = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Message = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.exportButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // mainDbPathTextBox
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.mainDbPathTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(8, 31);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(2278, 31);
-            this.textBox1.TabIndex = 0;
+            this.mainDbPathTextBox.Location = new System.Drawing.Point(4, 16);
+            this.mainDbPathTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mainDbPathTextBox.Name = "mainDbPathTextBox";
+            this.mainDbPathTextBox.Size = new System.Drawing.Size(1137, 20);
+            this.mainDbPathTextBox.TabIndex = 0;
             // 
-            // button1
+            // openMainDbButton
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(2295, 31);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 40);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Browse...";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.openMainDbButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.openMainDbButton.Location = new System.Drawing.Point(1144, 16);
+            this.openMainDbButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.openMainDbButton.Name = "openMainDbButton";
+            this.openMainDbButton.Size = new System.Drawing.Size(68, 21);
+            this.openMainDbButton.TabIndex = 2;
+            this.openMainDbButton.Text = "Browse...";
+            this.openMainDbButton.UseVisualStyleBackColor = true;
+            this.openMainDbButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Controls.Add(this.mainDbPathTextBox);
+            this.groupBox1.Controls.Add(this.openMainDbButton);
+            this.groupBox1.Location = new System.Drawing.Point(12, 8);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(2439, 91);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(1216, 47);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Main DB";
@@ -95,143 +99,184 @@
             this.tabControl.Controls.Add(this.tabPage1);
             this.tabControl.Controls.Add(this.tabPage2);
             this.tabControl.Controls.Add(this.tabPage3);
-            this.tabControl.Location = new System.Drawing.Point(24, 115);
-            this.tabControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl.Enabled = false;
+            this.tabControl.Location = new System.Drawing.Point(12, 59);
+            this.tabControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(2431, 1056);
+            this.tabControl.Size = new System.Drawing.Size(1216, 568);
             this.tabControl.TabIndex = 4;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.listView1);
+            this.tabPage1.Controls.Add(this.exportButton);
+            this.tabPage1.Controls.Add(this.messageListView);
             this.tabPage1.Controls.Add(this.groupBox2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 34);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage1.Size = new System.Drawing.Size(2423, 1018);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Size = new System.Drawing.Size(1208, 542);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Messages";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // listView1
+            // messageListView
             // 
-            this.listView1.Location = new System.Drawing.Point(9, 130);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(2380, 868);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.messageListView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.messageListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Timestamp,
+            this.Author,
+            this.Message});
+            this.messageListView.FullRowSelect = true;
+            this.messageListView.Location = new System.Drawing.Point(4, 67);
+            this.messageListView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.messageListView.Name = "messageListView";
+            this.messageListView.Size = new System.Drawing.Size(1200, 444);
+            this.messageListView.TabIndex = 1;
+            this.messageListView.UseCompatibleStateImageBehavior = false;
+            this.messageListView.View = System.Windows.Forms.View.Details;
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.dateToCheckBox);
             this.groupBox2.Controls.Add(this.dateFromCheckBox);
             this.groupBox2.Controls.Add(this.dateToPicker);
             this.groupBox2.Controls.Add(this.dateFromPicker);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.contactBox);
-            this.groupBox2.Location = new System.Drawing.Point(9, 9);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(4, 5);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(2381, 112);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(1200, 58);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Filter";
             // 
+            // dateToCheckBox
+            // 
+            this.dateToCheckBox.AutoSize = true;
+            this.dateToCheckBox.Location = new System.Drawing.Point(390, 11);
+            this.dateToCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateToCheckBox.Name = "dateToCheckBox";
+            this.dateToCheckBox.Size = new System.Drawing.Size(61, 17);
+            this.dateToCheckBox.TabIndex = 7;
+            this.dateToCheckBox.Text = "Date to";
+            this.dateToCheckBox.UseVisualStyleBackColor = true;
+            this.dateToCheckBox.CheckedChanged += new System.EventHandler(this.dateToCheckBox_CheckedChanged);
+            // 
+            // dateFromCheckBox
+            // 
+            this.dateFromCheckBox.AutoSize = true;
+            this.dateFromCheckBox.Location = new System.Drawing.Point(170, 12);
+            this.dateFromCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateFromCheckBox.Name = "dateFromCheckBox";
+            this.dateFromCheckBox.Size = new System.Drawing.Size(72, 17);
+            this.dateFromCheckBox.TabIndex = 6;
+            this.dateFromCheckBox.Text = "Date from";
+            this.dateFromCheckBox.UseVisualStyleBackColor = true;
+            this.dateFromCheckBox.CheckedChanged += new System.EventHandler(this.dateFromCheckBox_CheckedChanged);
+            // 
             // dateToPicker
             // 
             this.dateToPicker.Enabled = false;
-            this.dateToPicker.Location = new System.Drawing.Point(780, 59);
-            this.dateToPicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateToPicker.Location = new System.Drawing.Point(390, 31);
+            this.dateToPicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateToPicker.Name = "dateToPicker";
-            this.dateToPicker.Size = new System.Drawing.Size(388, 31);
+            this.dateToPicker.Size = new System.Drawing.Size(196, 20);
             this.dateToPicker.TabIndex = 5;
+            this.dateToPicker.ValueChanged += new System.EventHandler(this.dateToPicker_ValueChanged);
             // 
             // dateFromPicker
             // 
             this.dateFromPicker.Enabled = false;
-            this.dateFromPicker.Location = new System.Drawing.Point(341, 59);
-            this.dateFromPicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateFromPicker.Location = new System.Drawing.Point(170, 31);
+            this.dateFromPicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateFromPicker.Name = "dateFromPicker";
-            this.dateFromPicker.Size = new System.Drawing.Size(389, 31);
+            this.dateFromPicker.Size = new System.Drawing.Size(196, 20);
             this.dateFromPicker.TabIndex = 3;
+            this.dateFromPicker.ValueChanged += new System.EventHandler(this.dateFromPicker_ValueChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 28);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(4, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(215, 25);
+            this.label1.Size = new System.Drawing.Size(106, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Conversation Partner";
             // 
             // contactBox
             // 
             this.contactBox.FormattingEnabled = true;
-            this.contactBox.Location = new System.Drawing.Point(8, 56);
-            this.contactBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.contactBox.Location = new System.Drawing.Point(7, 30);
+            this.contactBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.contactBox.Name = "contactBox";
-            this.contactBox.Size = new System.Drawing.Size(288, 33);
+            this.contactBox.Size = new System.Drawing.Size(146, 21);
             this.contactBox.TabIndex = 0;
             this.contactBox.SelectedIndexChanged += new System.EventHandler(this.contactBox_SelectedIndexChanged);
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 34);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage2.Size = new System.Drawing.Size(2413, 1010);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Size = new System.Drawing.Size(1208, 523);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Calls";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 34);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage3.Size = new System.Drawing.Size(2413, 1010);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Size = new System.Drawing.Size(1208, 523);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Contacts";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // dateFromCheckBox
+            // Timestamp
             // 
-            this.dateFromCheckBox.AutoSize = true;
-            this.dateFromCheckBox.Location = new System.Drawing.Point(341, 23);
-            this.dateFromCheckBox.Name = "dateFromCheckBox";
-            this.dateFromCheckBox.Size = new System.Drawing.Size(124, 29);
-            this.dateFromCheckBox.TabIndex = 6;
-            this.dateFromCheckBox.Text = "Date from";
-            this.dateFromCheckBox.UseVisualStyleBackColor = true;
-            this.dateFromCheckBox.CheckedChanged += new System.EventHandler(this.dateFromCheckBox_CheckedChanged);
+            this.Timestamp.Text = "Timestamp";
+            this.Timestamp.Width = 110;
             // 
-            // dateToCheckBox
+            // Author
             // 
-            this.dateToCheckBox.AutoSize = true;
-            this.dateToCheckBox.Location = new System.Drawing.Point(780, 22);
-            this.dateToCheckBox.Name = "dateToCheckBox";
-            this.dateToCheckBox.Size = new System.Drawing.Size(100, 29);
-            this.dateToCheckBox.TabIndex = 7;
-            this.dateToCheckBox.Text = "Date to";
-            this.dateToCheckBox.UseVisualStyleBackColor = true;
-            this.dateToCheckBox.CheckedChanged += new System.EventHandler(this.dateToCheckBox_CheckedChanged);
+            this.Author.Text = "Author";
+            this.Author.Width = 94;
             // 
-            // Form1
+            // Message
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.Message.Text = "Message";
+            this.Message.Width = 1075;
+            // 
+            // exportButton
+            // 
+            this.exportButton.Location = new System.Drawing.Point(1128, 516);
+            this.exportButton.Name = "exportButton";
+            this.exportButton.Size = new System.Drawing.Size(75, 23);
+            this.exportButton.TabIndex = 2;
+            this.exportButton.Text = "Export...";
+            this.exportButton.UseVisualStyleBackColor = true;
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2471, 1053);
+            this.ClientSize = new System.Drawing.Size(1236, 638);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "MainForm";
             this.Text = "Skype Conversation Explorer";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -245,8 +290,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox mainDbPathTextBox;
+        private System.Windows.Forms.Button openMainDbButton;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.OpenFileDialog openMainDbDialog;
         private System.Windows.Forms.TabControl tabControl;
@@ -254,13 +299,17 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView messageListView;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox contactBox;
         private System.Windows.Forms.DateTimePicker dateFromPicker;
         private System.Windows.Forms.DateTimePicker dateToPicker;
         private System.Windows.Forms.CheckBox dateToCheckBox;
         private System.Windows.Forms.CheckBox dateFromCheckBox;
+        private System.Windows.Forms.ColumnHeader Timestamp;
+        private System.Windows.Forms.ColumnHeader Author;
+        private System.Windows.Forms.ColumnHeader Message;
+        private System.Windows.Forms.Button exportButton;
     }
 }
 
