@@ -15,7 +15,9 @@ namespace SkypeMainDB.Interfaces
         /// <param name="start">start DateTime</param>
         /// <param name="end">end DateTime</param>
         /// <returns></returns>
-        IEnumerable<Messages> GetByAccountName(string accountname, DateTime start, DateTime end);
+        IEnumerable<Messages> GetByAccountNameFromTo(string accountname, DateTime start, DateTime end);
+        IEnumerable<Messages> GetByAccountNameFrom(string accountname, DateTime start);
+        IEnumerable<Messages> GetByAccountNameTo(string accountname, DateTime end);
         IEnumerable<Messages> GetByAccountName(string accountname);
     }
 }

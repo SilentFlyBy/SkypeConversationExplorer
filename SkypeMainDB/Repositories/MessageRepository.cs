@@ -16,32 +16,30 @@ namespace SkypeMainDB.Repositories
                     where messages.dialog_partner == accountname
                     select messages).OrderBy(t => t.timestamp).ToArray().ToList<Messages>();
         }
-        public IEnumerable<Messages> GetByAccountName(string accountname, DateTime start, DateTime end)
+
+        public IEnumerable<Messages> GetByAccountNameFrom(string accountname, DateTime start)
         {
-            if (start != null && end != null)
-            {
-                return (from Messages messages in entities.Messages
-                        where messages.dialog_partner == accountname && Utils.TimestampToDateTime(messages.timestamp.Value) > start && Utils.TimestampToDateTime(messages.timestamp.Value) < end
-                        select messages).ToArray().ToList<Messages>();
-            }
-            else if (start != null)
-            {
-                return (from Messages messages in entities.Messages
-                        where messages.dialog_partner == accountname && Utils.TimestampToDateTime(messages.timestamp.Value) > start
-                        select messages).ToArray().ToList<Messages>();
-            }
-            else if (end != null)
-            {
-                return (from Messages messages in entities.Messages
-                        where messages.dialog_partner == accountname && Utils.TimestampToDateTime(messages.timestamp.Value) < end
-                        select messages).ToArray().ToList<Messages>();
-            }
-            else
-            {
-                return (from Messages messages in entities.Messages
-                        where messages.dialog_partner == accountname
-                        select messages).ToArray().ToList<Messages>();
-            }
+            long timestamp = Utils.DateTimeToTimestamp(start);
+            return (from Messages messages in entities.Messages
+                    where messages.dialog_partner == accountname && messages.timestamp.Value > timestamp
+                    select messages).ToArray().ToList<Messages>();
+        }
+        public IEnumerable<Messages> GetByAccountNameTo(string accountname, DateTime end)
+        {
+            long timestamp = Utils.DateTimeToTimestamp(end);
+            return (from Messages messages in entities.Messages
+                    where messages.dialog_partner == accountname && messages.timestamp.Value < timestamp
+                    select messages).ToArray().ToList<Messages>();
+        }
+
+        public IEnumerable<Messages> GetByAccountNameFromTo(string accountname, DateTime start, DateTime end)
+        {
+            long timestampstart = Utils.DateTimeToTimestamp(start);
+            long timestampend = Utils.DateTimeToTimestamp(end);
+            return (from Messages messages in entities.Messages
+                    where messages.dialog_partner == accountname && messages.timestamp.Value > timestampstart && messages.timestamp.Value < timestampend
+                    select messages).ToArray().ToList<Messages>();
+
         }
     }
 }
