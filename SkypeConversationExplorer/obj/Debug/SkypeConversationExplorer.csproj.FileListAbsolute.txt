@@ -22,3 +22,5 @@ C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\b
 C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\de\EntityFramework.resources.dll
 C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\de\EntityFramework.SqlServer.resources.dll
 C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\obj\Debug\SkypeConversationExplorer.MainForm.resources
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\obj\Debug\SkypeConversationExplorer.ExportDialog.resources
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\HTML\Template.html

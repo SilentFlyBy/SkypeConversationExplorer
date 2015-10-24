@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContactProcessor.cs" />
+    <Compile Include="EmoticonMap.cs" />
+    <Compile Include="HtmlWriter.cs" />
     <Compile Include="SCERepositoryFactory.cs" />
     <Compile Include="Interfaces\ISCERepositoryFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -52,8 +55,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="HTML\Resources\css\" />
     <Folder Include="HTML\Resources\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HTML\Resources\css\styles.css" />
+    <Content Include="HTML\Template.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

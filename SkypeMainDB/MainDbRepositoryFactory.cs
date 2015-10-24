@@ -23,6 +23,7 @@ namespace SkypeMainDB
             container = new mainEntities();
             supportedRepositoryTypes.Add(typeof(IMessageRepository), typeof(MessageRepository));
             supportedRepositoryTypes.Add(typeof(IContactRepository), typeof(ContactRepository));
+            supportedRepositoryTypes.Add(typeof(IAccountRepository), typeof(AccountRepository));
         }
         public T CreateRepository<T>() where T : IMainDbRepository
         {
