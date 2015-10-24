@@ -1,0 +1,34 @@
+﻿body {
+    width: 600px;
+    margin: 0px auto;
+}
+
+p {
+    margin: 0px;
+    font-family: “Segoe UI”,Arial,Helvetica,sans-serif;
+    font-size: 11pt;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    display: inline;
+}
+
+div.message {
+    width: 550px;
+    padding: 10px 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+div.left {
+    background-color: #C7EDFC;
+    text-align: left;
+}
+
+div.right {
+    float: right;
+    background-color: #E5F7FD;
+    text-align: right;
+}
