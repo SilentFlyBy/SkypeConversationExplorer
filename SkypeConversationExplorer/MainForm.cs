@@ -30,6 +30,7 @@ namespace SkypeConversationExplorer
 
         public MainForm()
         {
+            int i = 0;
             contactProcessor = new ContactProcessor();
             Factory = new SCERepositoryFactory();
 
