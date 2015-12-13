@@ -51,11 +51,17 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.SkypeName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.DisplayName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.callsListView = new System.Windows.Forms.ListView();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.callsContactBox = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainDbPathTextBox
@@ -255,6 +261,8 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.groupBox3);
+            this.tabPage2.Controls.Add(this.callsListView);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
@@ -296,6 +304,43 @@
             // 
             this.DisplayName.Text = "Display Name";
             // 
+            // callsListView
+            // 
+            this.callsListView.Location = new System.Drawing.Point(6, 72);
+            this.callsListView.Name = "callsListView";
+            this.callsListView.Size = new System.Drawing.Size(1197, 465);
+            this.callsListView.TabIndex = 0;
+            this.callsListView.UseCompatibleStateImageBehavior = false;
+            this.callsListView.View = System.Windows.Forms.View.Details;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.callsContactBox);
+            this.groupBox3.Location = new System.Drawing.Point(6, 4);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(1197, 62);
+            this.groupBox3.TabIndex = 1;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Filter";
+            // 
+            // callsContactBox
+            // 
+            this.callsContactBox.FormattingEnabled = true;
+            this.callsContactBox.Location = new System.Drawing.Point(9, 32);
+            this.callsContactBox.Name = "callsContactBox";
+            this.callsContactBox.Size = new System.Drawing.Size(130, 21);
+            this.callsContactBox.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(106, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Conversation Partner";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -313,7 +358,10 @@
             this.tabPage1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -343,6 +391,10 @@
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader SkypeName;
         private System.Windows.Forms.ColumnHeader DisplayName;
+        private System.Windows.Forms.ListView callsListView;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox callsContactBox;
     }
 }
 
