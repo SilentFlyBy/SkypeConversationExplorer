@@ -13,10 +13,10 @@ namespace SkypeMainDB
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class mainEntities : DbContext
+    public partial class mainDbEntities : DbContext
     {
-        public mainEntities()
-            : base("name=mainEntities")
+        public mainDbEntities()
+            : base("name=mainDbEntities")
         {
         }
     
@@ -36,16 +36,12 @@ namespace SkypeMainDB
         public virtual DbSet<Conversations> Conversations { get; set; }
         public virtual DbSet<DbMeta> DbMeta { get; set; }
         public virtual DbSet<LegacyMessages> LegacyMessages { get; set; }
-        public virtual DbSet<MediaDocuments> MediaDocuments { get; set; }
         public virtual DbSet<Messages> Messages { get; set; }
         public virtual DbSet<Participants> Participants { get; set; }
         public virtual DbSet<SMSes> SMSes { get; set; }
-        public virtual DbSet<tracker_journal> tracker_journal { get; set; }
         public virtual DbSet<Transfers> Transfers { get; set; }
-        public virtual DbSet<Translators> Translators { get; set; }
         public virtual DbSet<VideoMessages> VideoMessages { get; set; }
         public virtual DbSet<Videos> Videos { get; set; }
         public virtual DbSet<Voicemails> Voicemails { get; set; }
-        public virtual DbSet<AppSchemaVersion> AppSchemaVersion { get; set; }
     }
 }

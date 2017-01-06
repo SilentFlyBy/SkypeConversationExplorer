@@ -22,6 +22,7 @@ namespace SkypeMainDB
         public Nullable<long> requested_rank { get; set; }
         public Nullable<long> text_status { get; set; }
         public Nullable<long> voice_status { get; set; }
+        public Nullable<long> video_status { get; set; }
         public string live_identity { get; set; }
         public string live_price_for_me { get; set; }
         public string live_fwd_identities { get; set; }
@@ -42,13 +43,8 @@ namespace SkypeMainDB
         public Nullable<long> is_multiparty_video_capable { get; set; }
         public string live_identity_to_use { get; set; }
         public Nullable<long> livesession_recovery_in_progress { get; set; }
-        public Nullable<long> livesession_fallback_in_progress { get; set; }
+        public Nullable<long> extprop_default_identity { get; set; }
         public Nullable<long> is_multiparty_video_updatable { get; set; }
-        public string live_ip_address { get; set; }
-        public Nullable<long> is_video_codec_compatible { get; set; }
-        public Nullable<long> is_seamlessly_upgraded_call { get; set; }
-        public Nullable<long> live_voicechannel { get; set; }
         public string real_identity { get; set; }
-        public Nullable<long> adding_in_progress_since { get; set; }
     }
 }

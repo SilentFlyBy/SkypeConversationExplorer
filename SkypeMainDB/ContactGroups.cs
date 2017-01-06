@@ -35,6 +35,5 @@ namespace SkypeMainDB
         public Nullable<long> extprop_is_hidden { get; set; }
         public Nullable<long> extprop_sortorder_value { get; set; }
         public Nullable<long> extprop_is_expanded { get; set; }
-        public string abch_guid { get; set; }
     }
 }

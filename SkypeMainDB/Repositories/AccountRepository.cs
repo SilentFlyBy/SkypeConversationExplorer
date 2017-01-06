@@ -9,6 +9,6 @@ namespace SkypeMainDB.Repositories
 {
     public class AccountRepository : RepositoryBase<Accounts>, IAccountRepository
     {
-        public AccountRepository(mainEntities entities) : base(entities) { }
+        public AccountRepository(mainDbEntities entities) : base(entities) { }
     }
 }

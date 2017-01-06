@@ -8,3 +8,4 @@ C:\Users\Erik\Repositories\SkypeConversationExplorer\BusinessLogic\obj\Debug\Bus
 C:\Users\Erik\Repositories\SkypeConversationExplorer\BusinessLogic\obj\Debug\BusinessLogic.dll
 C:\Users\Erik\Repositories\SkypeConversationExplorer\BusinessLogic\obj\Debug\BusinessLogic.pdb
 C:\Users\Erik\Repositories\SkypeConversationExplorer\BusinessLogic\bin\Debug\HTML\Template.html
+C:\Users\Erik\Repositories\SkypeConversationExplorer\BusinessLogic\bin\Debug\de\EntityFramework.resources.dll

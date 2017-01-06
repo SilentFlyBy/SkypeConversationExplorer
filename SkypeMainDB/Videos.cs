@@ -32,6 +32,5 @@ namespace SkypeMainDB
         public Nullable<long> ss_timestamp { get; set; }
         public Nullable<long> convo_id { get; set; }
         public string device_path { get; set; }
-        public string device_name { get; set; }
     }
 }

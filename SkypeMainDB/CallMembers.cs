@@ -67,10 +67,5 @@ namespace SkypeMainDB
         public Nullable<long> nr_of_delivered_push_notifications { get; set; }
         public string call_session_guid { get; set; }
         public string version_string { get; set; }
-        public Nullable<long> fallback_in_progress { get; set; }
-        public string ip_address { get; set; }
-        public Nullable<long> is_video_codec_compatible { get; set; }
-        public Nullable<long> is_seamlessly_upgraded_call { get; set; }
-        public Nullable<long> voicechannel { get; set; }
     }
 }

@@ -9,9 +9,9 @@ namespace SkypeMainDB.Repositories
 {
     public class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
-        protected mainEntities entities = null;
+        protected mainDbEntities entities = null;
 
-        public RepositoryBase(mainEntities entities)
+        public RepositoryBase(mainDbEntities entities)
         {
             this.entities = entities;
         }

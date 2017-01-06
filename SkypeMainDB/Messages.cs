@@ -50,6 +50,5 @@ namespace SkypeMainDB
         public string extprop_contact_review_date { get; set; }
         public Nullable<long> extprop_contact_received_stamp { get; set; }
         public Nullable<long> extprop_contact_reviewed { get; set; }
-        public Nullable<long> option_bits { get; set; }
     }
 }

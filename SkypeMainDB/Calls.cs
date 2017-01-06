@@ -55,6 +55,5 @@ namespace SkypeMainDB
         public string pstn_status { get; set; }
         public byte[] members { get; set; }
         public Nullable<long> conv_dbid { get; set; }
-        public Nullable<long> technology { get; set; }
     }
 }

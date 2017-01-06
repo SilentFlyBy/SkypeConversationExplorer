@@ -14,13 +14,13 @@ namespace SkypeMainDB
     }
     public class MainDbRepositoryFactory : IMainDbRepositoryFactory
     {
-        private readonly mainEntities container;
+        private readonly mainDbEntities container;
         private readonly Dictionary<Type, IMainDbRepository> createdRepositories = new Dictionary<Type, IMainDbRepository>();
         private readonly Dictionary<Type, Type> supportedRepositoryTypes = new Dictionary<Type, Type>();
 
         public MainDbRepositoryFactory()
         {
-            container = new mainEntities();
+            container = new mainDbEntities();
             supportedRepositoryTypes.Add(typeof(IMessageRepository), typeof(MessageRepository));
             supportedRepositoryTypes.Add(typeof(IContactRepository), typeof(ContactRepository));
             supportedRepositoryTypes.Add(typeof(IAccountRepository), typeof(AccountRepository));

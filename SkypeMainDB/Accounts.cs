@@ -111,8 +111,5 @@ namespace SkypeMainDB
         public Nullable<long> roaming_history_enabled { get; set; }
         public Nullable<long> uses_jcs { get; set; }
         public Nullable<long> cobrand_id { get; set; }
-        public Nullable<long> shortcircuit_sync { get; set; }
-        public string signin_name { get; set; }
-        public string msa_pmn { get; set; }
     }
 }

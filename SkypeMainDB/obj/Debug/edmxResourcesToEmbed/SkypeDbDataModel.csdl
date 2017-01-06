@@ -102,9 +102,6 @@
     <Property Name="roaming_history_enabled" Type="Int64" />
     <Property Name="uses_jcs" Type="Int64" />
     <Property Name="cobrand_id" Type="Int64" />
-    <Property Name="shortcircuit_sync" Type="Int64" />
-    <Property Name="signin_name" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="msa_pmn" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Alerts">
     <Key>
@@ -194,11 +191,6 @@
     <Property Name="nr_of_delivered_push_notifications" Type="Int64" />
     <Property Name="call_session_guid" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="version_string" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="fallback_in_progress" Type="Int64" />
-    <Property Name="ip_address" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="is_video_codec_compatible" Type="Int64" />
-    <Property Name="is_seamlessly_upgraded_call" Type="Int64" />
-    <Property Name="voicechannel" Type="Int64" />
   </EntityType>
   <EntityType Name="Calls">
     <Key>
@@ -245,7 +237,6 @@
     <Property Name="pstn_status" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="members" Type="Binary" MaxLength="2147483647" FixedLength="false" />
     <Property Name="conv_dbid" Type="Int64" />
-    <Property Name="technology" Type="Int64" />
   </EntityType>
   <EntityType Name="ChatMembers">
     <Key>
@@ -328,7 +319,6 @@
     <Property Name="extprop_is_hidden" Type="Int64" />
     <Property Name="extprop_sortorder_value" Type="Int64" />
     <Property Name="extprop_is_expanded" Type="Int64" />
-    <Property Name="abch_guid" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Contacts">
     <Key>
@@ -351,7 +341,6 @@
     <Property Name="phone_office" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="phone_mobile" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="emails" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="hashed_emails" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="homepage" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="about" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="avatar_image" Type="Binary" MaxLength="2147483647" FixedLength="false" />
@@ -369,8 +358,6 @@
     <Property Name="lastonline_timestamp" Type="Int64" />
     <Property Name="availability" Type="Int64" />
     <Property Name="displayname" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="firstname" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="lastname" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="refreshing" Type="Int64" />
     <Property Name="given_authlevel" Type="Int64" />
     <Property Name="given_displayname" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
@@ -385,13 +372,9 @@
     <Property Name="assigned_phone2_label" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="assigned_phone3" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="assigned_phone3_label" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="is_mobile" Type="Int64" />
-    <Property Name="is_trusted" Type="Int64" />
     <Property Name="buddystatus" Type="Int64" />
     <Property Name="isauthorized" Type="Int64" />
     <Property Name="popularity_ord" Type="Int64" />
-    <Property Name="external_id" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="external_system_id" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="isblocked" Type="Int64" />
     <Property Name="authorization_certificate" Type="Binary" MaxLength="2147483647" FixedLength="false" />
     <Property Name="certificate_send_count" Type="Int64" />
@@ -401,7 +384,6 @@
     <Property Name="server_synced" Type="Int64" />
     <Property Name="contactlist_track" Type="Int64" />
     <Property Name="last_used_networktime" Type="Int64" />
-    <Property Name="network_availability" Type="Int64" />
     <Property Name="authorized_time" Type="Int64" />
     <Property Name="sent_authrequest" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="sent_authrequest_time" Type="Int64" />
@@ -431,13 +413,14 @@
     <Property Name="verified_email" Type="Binary" MaxLength="2147483647" FixedLength="false" />
     <Property Name="verified_company" Type="Binary" MaxLength="2147483647" FixedLength="false" />
     <Property Name="sent_authrequest_extrasbitmask" Type="Int64" />
-    <Property Name="liveid_cid" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="is_auto_buddy" Type="Int64" />
-    <Property Name="group_membership" Type="Int64" />
-    <Property Name="avatar_url" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="extprop_seen_birthday" Type="Int64" />
     <Property Name="extprop_sms_target" Type="Int64" />
     <Property Name="extprop_external_data" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="extprop_must_hide_avatar" Type="Int64" />
+    <Property Name="hashed_emails" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="external_id" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="external_system_id" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="liveid_cid" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Conversations">
     <Key>
@@ -512,22 +495,6 @@
     <Property Name="extprop_recovery_mode" Type="Int64" />
     <Property Name="mcr_caller" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="history_sync_state" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="live_call_technology" Type="Int64" />
-    <Property Name="is_blocked" Type="Int64" />
-    <Property Name="last_message_id" Type="Int64" />
-    <Property Name="picture" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="is_p2p_migrated" Type="Int64" />
-    <Property Name="translationLanguages" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="thread_version" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="consumption_horizon_set_at" Type="Int64" />
-    <Property Name="alt_identity" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="in_migrated_thread_since" Type="Int64" />
-    <Property Name="awareness_liveState" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="extprop_translator_enabled" Type="Int64" />
-    <Property Name="extprop_translator_call_my_lang" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="extprop_translator_call_other_lang" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="extprop_translator_chat_my_lang" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="extprop_translator_chat_other_lang" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="DbMeta">
     <Key>
@@ -542,28 +509,6 @@
     </Key>
     <Property Name="id" Type="Int64" Nullable="false" />
     <Property Name="is_permanent" Type="Int64" />
-  </EntityType>
-  <EntityType Name="MediaDocuments">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int64" Nullable="false" />
-    <Property Name="is_permanent" Type="Int64" />
-    <Property Name="storage_document_id" Type="Int64" />
-    <Property Name="status" Type="Int64" />
-    <Property Name="doc_type" Type="Int64" />
-    <Property Name="uri" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="original_name" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="title" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="thumbnail_url" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="web_url" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="mime_type" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="type" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="service" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="consumption_status" Type="Int64" />
-    <Property Name="convo_id" Type="Int64" />
-    <Property Name="message_id" Type="Int64" />
   </EntityType>
   <EntityType Name="Messages">
     <Key>
@@ -605,7 +550,6 @@
     <Property Name="extprop_contact_review_date" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="extprop_contact_received_stamp" Type="Int64" />
     <Property Name="extprop_contact_reviewed" Type="Int64" />
-    <Property Name="option_bits" Type="Int64" />
   </EntityType>
   <EntityType Name="Participants">
     <Key>
@@ -619,6 +563,7 @@
     <Property Name="requested_rank" Type="Int64" />
     <Property Name="text_status" Type="Int64" />
     <Property Name="voice_status" Type="Int64" />
+    <Property Name="video_status" Type="Int64" />
     <Property Name="live_identity" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="live_price_for_me" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="live_fwd_identities" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
@@ -639,14 +584,9 @@
     <Property Name="is_multiparty_video_capable" Type="Int64" />
     <Property Name="live_identity_to_use" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="livesession_recovery_in_progress" Type="Int64" />
-    <Property Name="livesession_fallback_in_progress" Type="Int64" />
+    <Property Name="extprop_default_identity" Type="Int64" />
     <Property Name="is_multiparty_video_updatable" Type="Int64" />
-    <Property Name="live_ip_address" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="is_video_codec_compatible" Type="Int64" />
-    <Property Name="is_seamlessly_upgraded_call" Type="Int64" />
-    <Property Name="live_voicechannel" Type="Int64" />
     <Property Name="real_identity" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="adding_in_progress_since" Type="Int64" />
   </EntityType>
   <EntityType Name="SMSes">
     <Key>
@@ -675,16 +615,6 @@
     <Property Name="convo_name" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="extprop_hide_from_history" Type="Int64" />
     <Property Name="extprop_extended" Type="Int64" />
-    <Property Name="error_category" Type="Int64" />
-  </EntityType>
-  <EntityType Name="tracker_journal">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int64" Nullable="false" />
-    <Property Name="dbID" Type="Int64" />
-    <Property Name="type" Type="Int64" />
-    <Property Name="change" Type="Int64" />
   </EntityType>
   <EntityType Name="Transfers">
     <Key>
@@ -718,15 +648,6 @@
     <Property Name="extprop_hide_from_history" Type="Int64" />
     <Property Name="extprop_window_visible" Type="Int64" />
     <Property Name="extprop_handled_by_chat" Type="Int64" />
-    <Property Name="parent_id" Type="Int64" />
-    <Property Name="offer_send_list" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-  </EntityType>
-  <EntityType Name="Translators">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int64" Nullable="false" />
-    <Property Name="is_permanent" Type="Int64" />
   </EntityType>
   <EntityType Name="VideoMessages">
     <Key>
@@ -747,7 +668,6 @@
     <Property Name="description" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="author" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="creation_timestamp" Type="Int64" />
-    <Property Name="type" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Videos">
     <Key>
@@ -771,7 +691,6 @@
     <Property Name="ss_timestamp" Type="Int64" />
     <Property Name="convo_id" Type="Int64" />
     <Property Name="device_path" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <Property Name="device_name" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Voicemails">
     <Key>
@@ -800,17 +719,7 @@
     <Property Name="xmsg" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <Property Name="extprop_hide_from_history" Type="Int64" />
   </EntityType>
-  <EntityType Name="AppSchemaVersion">
-    <Key>
-      <PropertyRef Name="ClientVersion" />
-      <PropertyRef Name="SQLiteSchemaVersion" />
-      <PropertyRef Name="SchemaUpdateType" />
-    </Key>
-    <Property Name="ClientVersion" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="SQLiteSchemaVersion" Type="Int64" Nullable="false" />
-    <Property Name="SchemaUpdateType" Type="Int64" Nullable="false" />
-  </EntityType>
-  <EntityContainer Name="mainEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="mainDbEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Accounts" EntityType="Self.Accounts" />
     <EntitySet Name="Alerts" EntityType="Self.Alerts" />
     <EntitySet Name="CallMembers" EntityType="Self.CallMembers" />
@@ -822,16 +731,12 @@
     <EntitySet Name="Conversations" EntityType="Self.Conversations" />
     <EntitySet Name="DbMeta" EntityType="Self.DbMeta" />
     <EntitySet Name="LegacyMessages" EntityType="Self.LegacyMessages" />
-    <EntitySet Name="MediaDocuments" EntityType="Self.MediaDocuments" />
     <EntitySet Name="Messages" EntityType="Self.Messages" />
     <EntitySet Name="Participants" EntityType="Self.Participants" />
     <EntitySet Name="SMSes" EntityType="Self.SMSes" />
-    <EntitySet Name="tracker_journal" EntityType="Self.tracker_journal" />
     <EntitySet Name="Transfers" EntityType="Self.Transfers" />
-    <EntitySet Name="Translators" EntityType="Self.Translators" />
     <EntitySet Name="VideoMessages" EntityType="Self.VideoMessages" />
     <EntitySet Name="Videos" EntityType="Self.Videos" />
     <EntitySet Name="Voicemails" EntityType="Self.Voicemails" />
-    <EntitySet Name="AppSchemaVersion" EntityType="Self.AppSchemaVersion" />
   </EntityContainer>
 </Schema>

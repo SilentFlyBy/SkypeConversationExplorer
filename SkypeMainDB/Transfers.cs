@@ -42,7 +42,5 @@ namespace SkypeMainDB
         public Nullable<long> extprop_hide_from_history { get; set; }
         public Nullable<long> extprop_window_visible { get; set; }
         public Nullable<long> extprop_handled_by_chat { get; set; }
-        public Nullable<long> parent_id { get; set; }
-        public string offer_send_list { get; set; }
     }
 }

@@ -29,6 +29,5 @@ namespace SkypeMainDB
         public string description { get; set; }
         public string author { get; set; }
         public Nullable<long> creation_timestamp { get; set; }
-        public string type { get; set; }
     }
 }

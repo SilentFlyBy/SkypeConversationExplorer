@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="mainModelStoreContainer" CdmEntityContainer="mainEntities">
+  <EntityContainerMapping StorageEntityContainer="mainModelStoreContainer" CdmEntityContainer="mainDbEntities">
     <EntitySetMapping Name="Accounts">
       <EntityTypeMapping TypeName="mainModel.Accounts">
         <MappingFragment StoreEntitySet="Accounts">
@@ -102,9 +102,6 @@
           <ScalarProperty Name="roaming_history_enabled" ColumnName="roaming_history_enabled" />
           <ScalarProperty Name="uses_jcs" ColumnName="uses_jcs" />
           <ScalarProperty Name="cobrand_id" ColumnName="cobrand_id" />
-          <ScalarProperty Name="shortcircuit_sync" ColumnName="shortcircuit_sync" />
-          <ScalarProperty Name="signin_name" ColumnName="signin_name" />
-          <ScalarProperty Name="msa_pmn" ColumnName="msa_pmn" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -196,11 +193,6 @@
           <ScalarProperty Name="nr_of_delivered_push_notifications" ColumnName="nr_of_delivered_push_notifications" />
           <ScalarProperty Name="call_session_guid" ColumnName="call_session_guid" />
           <ScalarProperty Name="version_string" ColumnName="version_string" />
-          <ScalarProperty Name="fallback_in_progress" ColumnName="fallback_in_progress" />
-          <ScalarProperty Name="ip_address" ColumnName="ip_address" />
-          <ScalarProperty Name="is_video_codec_compatible" ColumnName="is_video_codec_compatible" />
-          <ScalarProperty Name="is_seamlessly_upgraded_call" ColumnName="is_seamlessly_upgraded_call" />
-          <ScalarProperty Name="voicechannel" ColumnName="voicechannel" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -248,7 +240,6 @@
           <ScalarProperty Name="pstn_status" ColumnName="pstn_status" />
           <ScalarProperty Name="members" ColumnName="members" />
           <ScalarProperty Name="conv_dbid" ColumnName="conv_dbid" />
-          <ScalarProperty Name="technology" ColumnName="technology" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -334,7 +325,6 @@
           <ScalarProperty Name="extprop_is_hidden" ColumnName="extprop_is_hidden" />
           <ScalarProperty Name="extprop_sortorder_value" ColumnName="extprop_sortorder_value" />
           <ScalarProperty Name="extprop_is_expanded" ColumnName="extprop_is_expanded" />
-          <ScalarProperty Name="abch_guid" ColumnName="abch_guid" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -358,7 +348,6 @@
           <ScalarProperty Name="phone_office" ColumnName="phone_office" />
           <ScalarProperty Name="phone_mobile" ColumnName="phone_mobile" />
           <ScalarProperty Name="emails" ColumnName="emails" />
-          <ScalarProperty Name="hashed_emails" ColumnName="hashed_emails" />
           <ScalarProperty Name="homepage" ColumnName="homepage" />
           <ScalarProperty Name="about" ColumnName="about" />
           <ScalarProperty Name="avatar_image" ColumnName="avatar_image" />
@@ -376,8 +365,6 @@
           <ScalarProperty Name="lastonline_timestamp" ColumnName="lastonline_timestamp" />
           <ScalarProperty Name="availability" ColumnName="availability" />
           <ScalarProperty Name="displayname" ColumnName="displayname" />
-          <ScalarProperty Name="firstname" ColumnName="firstname" />
-          <ScalarProperty Name="lastname" ColumnName="lastname" />
           <ScalarProperty Name="refreshing" ColumnName="refreshing" />
           <ScalarProperty Name="given_authlevel" ColumnName="given_authlevel" />
           <ScalarProperty Name="given_displayname" ColumnName="given_displayname" />
@@ -392,13 +379,9 @@
           <ScalarProperty Name="assigned_phone2_label" ColumnName="assigned_phone2_label" />
           <ScalarProperty Name="assigned_phone3" ColumnName="assigned_phone3" />
           <ScalarProperty Name="assigned_phone3_label" ColumnName="assigned_phone3_label" />
-          <ScalarProperty Name="is_mobile" ColumnName="is_mobile" />
-          <ScalarProperty Name="is_trusted" ColumnName="is_trusted" />
           <ScalarProperty Name="buddystatus" ColumnName="buddystatus" />
           <ScalarProperty Name="isauthorized" ColumnName="isauthorized" />
           <ScalarProperty Name="popularity_ord" ColumnName="popularity_ord" />
-          <ScalarProperty Name="external_id" ColumnName="external_id" />
-          <ScalarProperty Name="external_system_id" ColumnName="external_system_id" />
           <ScalarProperty Name="isblocked" ColumnName="isblocked" />
           <ScalarProperty Name="authorization_certificate" ColumnName="authorization_certificate" />
           <ScalarProperty Name="certificate_send_count" ColumnName="certificate_send_count" />
@@ -408,7 +391,6 @@
           <ScalarProperty Name="server_synced" ColumnName="server_synced" />
           <ScalarProperty Name="contactlist_track" ColumnName="contactlist_track" />
           <ScalarProperty Name="last_used_networktime" ColumnName="last_used_networktime" />
-          <ScalarProperty Name="network_availability" ColumnName="network_availability" />
           <ScalarProperty Name="authorized_time" ColumnName="authorized_time" />
           <ScalarProperty Name="sent_authrequest" ColumnName="sent_authrequest" />
           <ScalarProperty Name="sent_authrequest_time" ColumnName="sent_authrequest_time" />
@@ -438,13 +420,14 @@
           <ScalarProperty Name="verified_email" ColumnName="verified_email" />
           <ScalarProperty Name="verified_company" ColumnName="verified_company" />
           <ScalarProperty Name="sent_authrequest_extrasbitmask" ColumnName="sent_authrequest_extrasbitmask" />
-          <ScalarProperty Name="liveid_cid" ColumnName="liveid_cid" />
-          <ScalarProperty Name="is_auto_buddy" ColumnName="is_auto_buddy" />
-          <ScalarProperty Name="group_membership" ColumnName="group_membership" />
-          <ScalarProperty Name="avatar_url" ColumnName="avatar_url" />
           <ScalarProperty Name="extprop_seen_birthday" ColumnName="extprop_seen_birthday" />
           <ScalarProperty Name="extprop_sms_target" ColumnName="extprop_sms_target" />
           <ScalarProperty Name="extprop_external_data" ColumnName="extprop_external_data" />
+          <ScalarProperty Name="extprop_must_hide_avatar" ColumnName="extprop_must_hide_avatar" />
+          <ScalarProperty Name="hashed_emails" ColumnName="hashed_emails" />
+          <ScalarProperty Name="external_id" ColumnName="external_id" />
+          <ScalarProperty Name="external_system_id" ColumnName="external_system_id" />
+          <ScalarProperty Name="liveid_cid" ColumnName="liveid_cid" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -520,22 +503,6 @@
           <ScalarProperty Name="extprop_recovery_mode" ColumnName="extprop_recovery_mode" />
           <ScalarProperty Name="mcr_caller" ColumnName="mcr_caller" />
           <ScalarProperty Name="history_sync_state" ColumnName="history_sync_state" />
-          <ScalarProperty Name="live_call_technology" ColumnName="live_call_technology" />
-          <ScalarProperty Name="is_blocked" ColumnName="is_blocked" />
-          <ScalarProperty Name="last_message_id" ColumnName="last_message_id" />
-          <ScalarProperty Name="picture" ColumnName="picture" />
-          <ScalarProperty Name="is_p2p_migrated" ColumnName="is_p2p_migrated" />
-          <ScalarProperty Name="translationLanguages" ColumnName="translationLanguages" />
-          <ScalarProperty Name="thread_version" ColumnName="thread_version" />
-          <ScalarProperty Name="consumption_horizon_set_at" ColumnName="consumption_horizon_set_at" />
-          <ScalarProperty Name="alt_identity" ColumnName="alt_identity" />
-          <ScalarProperty Name="in_migrated_thread_since" ColumnName="in_migrated_thread_since" />
-          <ScalarProperty Name="awareness_liveState" ColumnName="awareness_liveState" />
-          <ScalarProperty Name="extprop_translator_enabled" ColumnName="extprop_translator_enabled" />
-          <ScalarProperty Name="extprop_translator_call_my_lang" ColumnName="extprop_translator_call_my_lang" />
-          <ScalarProperty Name="extprop_translator_call_other_lang" ColumnName="extprop_translator_call_other_lang" />
-          <ScalarProperty Name="extprop_translator_chat_my_lang" ColumnName="extprop_translator_chat_my_lang" />
-          <ScalarProperty Name="extprop_translator_chat_other_lang" ColumnName="extprop_translator_chat_other_lang" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -552,29 +519,6 @@
         <MappingFragment StoreEntitySet="LegacyMessages">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="is_permanent" ColumnName="is_permanent" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="MediaDocuments">
-      <EntityTypeMapping TypeName="mainModel.MediaDocuments">
-        <MappingFragment StoreEntitySet="MediaDocuments">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="is_permanent" ColumnName="is_permanent" />
-          <ScalarProperty Name="storage_document_id" ColumnName="storage_document_id" />
-          <ScalarProperty Name="status" ColumnName="status" />
-          <ScalarProperty Name="doc_type" ColumnName="doc_type" />
-          <ScalarProperty Name="uri" ColumnName="uri" />
-          <ScalarProperty Name="original_name" ColumnName="original_name" />
-          <ScalarProperty Name="title" ColumnName="title" />
-          <ScalarProperty Name="description" ColumnName="description" />
-          <ScalarProperty Name="thumbnail_url" ColumnName="thumbnail_url" />
-          <ScalarProperty Name="web_url" ColumnName="web_url" />
-          <ScalarProperty Name="mime_type" ColumnName="mime_type" />
-          <ScalarProperty Name="type" ColumnName="type" />
-          <ScalarProperty Name="service" ColumnName="service" />
-          <ScalarProperty Name="consumption_status" ColumnName="consumption_status" />
-          <ScalarProperty Name="convo_id" ColumnName="convo_id" />
-          <ScalarProperty Name="message_id" ColumnName="message_id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -617,7 +561,6 @@
           <ScalarProperty Name="extprop_contact_review_date" ColumnName="extprop_contact_review_date" />
           <ScalarProperty Name="extprop_contact_received_stamp" ColumnName="extprop_contact_received_stamp" />
           <ScalarProperty Name="extprop_contact_reviewed" ColumnName="extprop_contact_reviewed" />
-          <ScalarProperty Name="option_bits" ColumnName="option_bits" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -632,6 +575,7 @@
           <ScalarProperty Name="requested_rank" ColumnName="requested_rank" />
           <ScalarProperty Name="text_status" ColumnName="text_status" />
           <ScalarProperty Name="voice_status" ColumnName="voice_status" />
+          <ScalarProperty Name="video_status" ColumnName="video_status" />
           <ScalarProperty Name="live_identity" ColumnName="live_identity" />
           <ScalarProperty Name="live_price_for_me" ColumnName="live_price_for_me" />
           <ScalarProperty Name="live_fwd_identities" ColumnName="live_fwd_identities" />
@@ -652,14 +596,9 @@
           <ScalarProperty Name="is_multiparty_video_capable" ColumnName="is_multiparty_video_capable" />
           <ScalarProperty Name="live_identity_to_use" ColumnName="live_identity_to_use" />
           <ScalarProperty Name="livesession_recovery_in_progress" ColumnName="livesession_recovery_in_progress" />
-          <ScalarProperty Name="livesession_fallback_in_progress" ColumnName="livesession_fallback_in_progress" />
+          <ScalarProperty Name="extprop_default_identity" ColumnName="extprop_default_identity" />
           <ScalarProperty Name="is_multiparty_video_updatable" ColumnName="is_multiparty_video_updatable" />
-          <ScalarProperty Name="live_ip_address" ColumnName="live_ip_address" />
-          <ScalarProperty Name="is_video_codec_compatible" ColumnName="is_video_codec_compatible" />
-          <ScalarProperty Name="is_seamlessly_upgraded_call" ColumnName="is_seamlessly_upgraded_call" />
-          <ScalarProperty Name="live_voicechannel" ColumnName="live_voicechannel" />
           <ScalarProperty Name="real_identity" ColumnName="real_identity" />
-          <ScalarProperty Name="adding_in_progress_since" ColumnName="adding_in_progress_since" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -689,17 +628,6 @@
           <ScalarProperty Name="convo_name" ColumnName="convo_name" />
           <ScalarProperty Name="extprop_hide_from_history" ColumnName="extprop_hide_from_history" />
           <ScalarProperty Name="extprop_extended" ColumnName="extprop_extended" />
-          <ScalarProperty Name="error_category" ColumnName="error_category" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tracker_journal">
-      <EntityTypeMapping TypeName="mainModel.tracker_journal">
-        <MappingFragment StoreEntitySet="tracker_journal">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="dbID" ColumnName="dbID" />
-          <ScalarProperty Name="type" ColumnName="type" />
-          <ScalarProperty Name="change" ColumnName="change" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -734,16 +662,6 @@
           <ScalarProperty Name="extprop_hide_from_history" ColumnName="extprop_hide_from_history" />
           <ScalarProperty Name="extprop_window_visible" ColumnName="extprop_window_visible" />
           <ScalarProperty Name="extprop_handled_by_chat" ColumnName="extprop_handled_by_chat" />
-          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
-          <ScalarProperty Name="offer_send_list" ColumnName="offer_send_list" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Translators">
-      <EntityTypeMapping TypeName="mainModel.Translators">
-        <MappingFragment StoreEntitySet="Translators">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="is_permanent" ColumnName="is_permanent" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -765,7 +683,6 @@
           <ScalarProperty Name="description" ColumnName="description" />
           <ScalarProperty Name="author" ColumnName="author" />
           <ScalarProperty Name="creation_timestamp" ColumnName="creation_timestamp" />
-          <ScalarProperty Name="type" ColumnName="type" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -790,7 +707,6 @@
           <ScalarProperty Name="ss_timestamp" ColumnName="ss_timestamp" />
           <ScalarProperty Name="convo_id" ColumnName="convo_id" />
           <ScalarProperty Name="device_path" ColumnName="device_path" />
-          <ScalarProperty Name="device_name" ColumnName="device_name" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -819,15 +735,6 @@
           <ScalarProperty Name="vflags" ColumnName="vflags" />
           <ScalarProperty Name="xmsg" ColumnName="xmsg" />
           <ScalarProperty Name="extprop_hide_from_history" ColumnName="extprop_hide_from_history" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="AppSchemaVersion">
-      <EntityTypeMapping TypeName="mainModel.AppSchemaVersion">
-        <MappingFragment StoreEntitySet="AppSchemaVersion">
-          <ScalarProperty Name="ClientVersion" ColumnName="ClientVersion" />
-          <ScalarProperty Name="SQLiteSchemaVersion" ColumnName="SQLiteSchemaVersion" />
-          <ScalarProperty Name="SchemaUpdateType" ColumnName="SchemaUpdateType" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

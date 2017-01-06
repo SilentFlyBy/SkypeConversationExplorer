@@ -37,6 +37,5 @@ namespace SkypeMainDB
         public string convo_name { get; set; }
         public Nullable<long> extprop_hide_from_history { get; set; }
         public Nullable<long> extprop_extended { get; set; }
-        public Nullable<long> error_category { get; set; }
     }
 }

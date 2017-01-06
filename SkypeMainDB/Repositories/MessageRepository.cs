@@ -9,7 +9,7 @@ namespace SkypeMainDB.Repositories
 {
     public class MessageRepository : RepositoryBase<Messages>, IMessageRepository
     {
-        public MessageRepository(mainEntities entities) : base(entities) { }
+        public MessageRepository(mainDbEntities entities) : base(entities) { }
         public IEnumerable<Messages> GetByAccountName(string accountname)
         {
             return (from Messages messages in entities.Messages

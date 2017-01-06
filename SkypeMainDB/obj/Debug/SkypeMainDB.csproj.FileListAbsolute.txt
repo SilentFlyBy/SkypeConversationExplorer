@@ -17,3 +17,9 @@ C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\bin\Debug\Entit
 C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\bin\Debug\EntityFramework.xml
 C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\bin\Debug\System.Data.SQLite.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\bin\Debug\System.Data.SQLite.xml
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\bin\Debug\de\EntityFramework.resources.dll
+C:\Users\Erik\Repositories\SkypeConversationExplorer\SkypeMainDB\bin\Debug\de\EntityFramework.SqlServer.resources.dll

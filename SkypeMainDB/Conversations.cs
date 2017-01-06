@@ -83,21 +83,5 @@ namespace SkypeMainDB
         public Nullable<long> extprop_recovery_mode { get; set; }
         public string mcr_caller { get; set; }
         public string history_sync_state { get; set; }
-        public Nullable<long> live_call_technology { get; set; }
-        public Nullable<long> is_blocked { get; set; }
-        public Nullable<long> last_message_id { get; set; }
-        public string picture { get; set; }
-        public Nullable<long> is_p2p_migrated { get; set; }
-        public string translationLanguages { get; set; }
-        public string thread_version { get; set; }
-        public Nullable<long> consumption_horizon_set_at { get; set; }
-        public string alt_identity { get; set; }
-        public Nullable<long> in_migrated_thread_since { get; set; }
-        public string awareness_liveState { get; set; }
-        public Nullable<long> extprop_translator_enabled { get; set; }
-        public string extprop_translator_call_my_lang { get; set; }
-        public string extprop_translator_call_other_lang { get; set; }
-        public string extprop_translator_chat_my_lang { get; set; }
-        public string extprop_translator_chat_other_lang { get; set; }
     }
 }

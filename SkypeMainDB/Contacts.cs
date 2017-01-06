@@ -31,7 +31,6 @@ namespace SkypeMainDB
         public string phone_office { get; set; }
         public string phone_mobile { get; set; }
         public string emails { get; set; }
-        public string hashed_emails { get; set; }
         public string homepage { get; set; }
         public string about { get; set; }
         public byte[] avatar_image { get; set; }
@@ -49,8 +48,6 @@ namespace SkypeMainDB
         public Nullable<long> lastonline_timestamp { get; set; }
         public Nullable<long> availability { get; set; }
         public string displayname { get; set; }
-        public string firstname { get; set; }
-        public string lastname { get; set; }
         public Nullable<long> refreshing { get; set; }
         public Nullable<long> given_authlevel { get; set; }
         public string given_displayname { get; set; }
@@ -65,13 +62,9 @@ namespace SkypeMainDB
         public string assigned_phone2_label { get; set; }
         public string assigned_phone3 { get; set; }
         public string assigned_phone3_label { get; set; }
-        public Nullable<long> is_mobile { get; set; }
-        public Nullable<long> is_trusted { get; set; }
         public Nullable<long> buddystatus { get; set; }
         public Nullable<long> isauthorized { get; set; }
         public Nullable<long> popularity_ord { get; set; }
-        public string external_id { get; set; }
-        public string external_system_id { get; set; }
         public Nullable<long> isblocked { get; set; }
         public byte[] authorization_certificate { get; set; }
         public Nullable<long> certificate_send_count { get; set; }
@@ -81,7 +74,6 @@ namespace SkypeMainDB
         public Nullable<long> server_synced { get; set; }
         public Nullable<long> contactlist_track { get; set; }
         public Nullable<long> last_used_networktime { get; set; }
-        public Nullable<long> network_availability { get; set; }
         public Nullable<long> authorized_time { get; set; }
         public string sent_authrequest { get; set; }
         public Nullable<long> sent_authrequest_time { get; set; }
@@ -111,12 +103,13 @@ namespace SkypeMainDB
         public byte[] verified_email { get; set; }
         public byte[] verified_company { get; set; }
         public Nullable<long> sent_authrequest_extrasbitmask { get; set; }
-        public string liveid_cid { get; set; }
-        public Nullable<long> is_auto_buddy { get; set; }
-        public Nullable<long> group_membership { get; set; }
-        public string avatar_url { get; set; }
         public Nullable<long> extprop_seen_birthday { get; set; }
         public Nullable<long> extprop_sms_target { get; set; }
         public string extprop_external_data { get; set; }
+        public Nullable<long> extprop_must_hide_avatar { get; set; }
+        public string hashed_emails { get; set; }
+        public string external_id { get; set; }
+        public string external_system_id { get; set; }
+        public string liveid_cid { get; set; }
     }
 }
