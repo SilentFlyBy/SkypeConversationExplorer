@@ -12,16 +12,26 @@ namespace BusinessLogic
 
         static EmoticonMap()
         {
-            Map.Add("smile", "");
+            Map.Add("laugh", "bigsmile");
+            Map.Add("sad", "sadsmile");
+            Map.Add("worry", "worried");
+            Map.Add("think", "thinking");
+            Map.Add("blush", "blushing");
+            Map.Add("wasntme", "itwasntme");
+            Map.Add("cry", "crying");
+            Map.Add("wonder", "wondering");
+            Map.Add("clap", "clapping");
+            Map.Add("puke", "puking");
+            Map.Add("dance", "dancing");
         }
 
-        public string GetEmoticonFilename(string emo)
+        public static string GetEmoticonFilename(string emo)
         {
             if(Map.Keys.Contains(emo))
             {
                 return Map[emo];
             }
-            throw new Exception("Key not found");
+            return emo;
         }
     }
 }

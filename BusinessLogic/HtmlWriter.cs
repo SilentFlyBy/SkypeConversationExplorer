@@ -65,7 +65,8 @@ namespace BusinessLogic
 
                     if (smily != string.Empty)
                     {
-                        writer.AddAttribute(HtmlTextWriterAttribute.Src, "./Emoticons/" + smily + ".png");
+                        string smilyUrl = EmoticonMap.GetEmoticonFilename(smily);
+                        writer.AddAttribute(HtmlTextWriterAttribute.Src, "./Emoticons/" + smilyUrl + ".png");
                         writer.RenderBeginTag(HtmlTextWriterTag.Img);
                     }
                 }
