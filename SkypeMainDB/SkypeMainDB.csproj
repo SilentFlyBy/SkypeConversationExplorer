@@ -151,11 +151,11 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="packages.config" />
     <EntityDeploy Include="SkypeDBDataModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>SkypeDBDataModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="packages.config" />
     <None Include="SkypeDBDataModel.edmx.diagram">
       <DependentUpon>SkypeDBDataModel.edmx</DependentUpon>
     </None>
