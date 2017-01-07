@@ -65,342 +65,345 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="HTML\Resources\css\styles.css" />
-    <Content Include="HTML\Resources\images\angel.png">
+    <EmbeddedResource Include="Resources\angel.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\angry.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\angry.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\bandit.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\bandit.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\bartlett.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\bartlett.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\beer.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\beer.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\bigsmile.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\bigsmile.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\bike.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\bike.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\blackwidow.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\blackwidow.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\blushing.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\blushing.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\bow.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\bow.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\brokenheart.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\brokenheart.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\bucky.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\bucky.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\bug.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\bug.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\cake.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\cake.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\call.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\call.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\captain.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\captain.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\cash.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\cash.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\cat.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\cat.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\clapping.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\clapping.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\coffee.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\coffee.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\cool.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\cool.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\crying.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\crying.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\dancing.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\dancing.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\devil.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\devil.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\dog.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\dog.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\doh.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\doh.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\drink.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\drink.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\drunk.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\drunk.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\dull.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\dull.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\emo.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\emo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\envy.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\envy.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\evilgrin.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\evilgrin.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\facepalm.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\facepalm.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\finger.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\finger.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\fingerscrossed.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\fingerscrossed.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\flower.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\flower.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\fubar.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\fubar.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\giggle.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\giggle.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\handshake.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\handshake.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\happy.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\happy.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\headbang.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\headbang.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\heart.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\heart.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\heidy.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\heidy.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\hi.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\hi.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\highfive.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\highfive.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\hollest.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\hollest.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\hug.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\hug.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\idea.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\idea.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\inlove.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\inlove.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\itwasntme.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\itwasntme.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\kiss.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\kiss.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\lalala.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\lalala.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\lipssealed.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\lipssealed.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\mail.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\mail.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\makeup.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\makeup.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\malthe.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\malthe.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\mmm.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\mmm.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\mooning.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\mooning.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\movie.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\movie.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\muscle.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\muscle.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\music.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\music.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\nerd.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\nerd.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\nickfury.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\nickfury.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\ninja.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ninja.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\no.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\no.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\nod.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\nod.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\oliver.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\oliver.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\party.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\party.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\phone.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\phone.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\pizza.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\pizza.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\poolparty.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\poolparty.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\priidu.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\priidu.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\puking.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\puking.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\punch.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\punch.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\rain.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\rain.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\rock.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\rock.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\rofl.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\rofl.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\sadsmile.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\sadsmile.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\shake.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\shake.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\sheep.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\sheep.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\shielddeflect.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\shielddeflect.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\skype.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\skype.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\sleepy.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\sleepy.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\smile.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\smile.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\smirk.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\smirk.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\smoking.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\smoking.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\speechless.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\speechless.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\star.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\star.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\sunshine.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\sunshine.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\surprised.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\surprised.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\swear.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\swear.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\sweating.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\sweating.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\talking.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\talking.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\talktothehand.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\talktothehand.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\tauri.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\tauri.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\thinking.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\thinking.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\time.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\time.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\tmi.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\tmi.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\toivo.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\toivo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\tongueout.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\tongueout.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\tumbleweed.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\tumbleweed.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\wait.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\wait.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\waiting.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\waiting.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\wfh.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\wfh.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\whew.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\whew.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\wink.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\wink.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\wondering.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\wondering.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\worried.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\worried.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\wtf.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\wtf.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\yawning.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\yawning.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Resources\images\yes.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\yes.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HTML\Template.html">
+    </EmbeddedResource>
+    <EmbeddedResource Include="HTML\Template.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HTML\Resources\images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

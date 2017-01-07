@@ -49,6 +49,8 @@ namespace SCE
             contactProcessor = new ContactProcessor();
             Factory = new SCERepositoryFactory();
 
+            System.IO.Directory.CreateDirectory(@"c:\temp");
+
             InitializeComponent();
         }
 
@@ -59,7 +61,7 @@ namespace SCE
             dialog.Filter = "SQLite Database file|*.db";
             if (dialog.ShowDialog() == true)
             {
-                File.Copy(dialog.FileName, ".\\maintemp.db", true);
+                File.Copy(dialog.FileName, @"c:\temp\maintemp.db", true);
                 FillContactList();
                 tabControl_main.IsEnabled = true;
                 menuItem_export.IsEnabled = true;

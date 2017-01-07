@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCE.BusinessObjects.SkypeMa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCE", "SCE\SCE.csproj", "{98CE198C-D4C6-4E9F-B054-C98B4F553B06}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SCE.Setup", "SCE.Setup\SCE.Setup.vdproj", "{DDDA1096-EE7C-4AB4-A997-E279BE56D417}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,8 @@ Global
 		{98CE198C-D4C6-4E9F-B054-C98B4F553B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98CE198C-D4C6-4E9F-B054-C98B4F553B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98CE198C-D4C6-4E9F-B054-C98B4F553B06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDDA1096-EE7C-4AB4-A997-E279BE56D417}.Debug|Any CPU.ActiveCfg = Debug
+		{DDDA1096-EE7C-4AB4-A997-E279BE56D417}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

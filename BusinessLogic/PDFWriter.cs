@@ -11,17 +11,20 @@ using System.Diagnostics;
 using System.Text.RegularExpressions;
 using System.Net;
 using SCE.BusinessObjects.SkypeMainDB;
+using System.Reflection;
 
 namespace SCE.Core
 {
     public class PDFMessageWriter
     {
         private PdfWriter writer;
-
+        private Assembly assembly;
 
 
         public void WritePDF(List<Messages> messagelist, string filepath)
         {
+            assembly = Assembly.GetExecutingAssembly();
+
             ContactProcessor contactProcessor = new ContactProcessor();
             List<Contacts> contactList = contactProcessor.getAllContacts().OrderBy(t => t.displayname).ToList();
 
@@ -69,11 +72,21 @@ namespace SCE.Core
                         string smilyUrl = EmoticonMap.GetEmoticonFilename(smily);
                         try
                         {
-                            var image = Image.GetInstance("./HTML/Resources/images/" + smilyUrl + ".png");
+                            byte[] imageBytes;
+                            string resourcename = "SCE.Core.Resources." + smilyUrl + ".png";
+
+                            using (Stream imageStream = assembly.GetManifestResourceStream(resourcename))
+                            using (MemoryStream ms = new MemoryStream())
+                            {
+                                imageStream.CopyTo(ms);
+                                imageBytes = ms.ToArray();
+                            }
+
+                            var image = Image.GetInstance(imageBytes);
                             image.ScaleAbsolute(10f, 10f);
                             p.Add(new Chunk(image, 0, 0, true));
                         }
-                        catch(WebException) { }
+                        catch(NullReferenceException) { }
                     }
                 }
                 
