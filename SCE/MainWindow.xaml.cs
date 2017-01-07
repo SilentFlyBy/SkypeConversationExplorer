@@ -37,6 +37,7 @@ namespace SCE
         private DateTime? FromDate;
         private DateTime? ToDate;
         private string selectedContact;
+        private string search;
 
 
         public MainWindow()
@@ -129,6 +130,11 @@ namespace SCE
                 messageList = Factory.CreateRepository<IMessageRepository>().GetByAccountName(contact).OrderBy(t => t.timestamp).ToList();
             }
 
+            if(search != null)
+            {
+                messageList = messageList.Where(m => m.body_xml != null && m.body_xml.ToLower().Contains(search.ToLower())).ToList();
+            }
+
             foreach (Messages m in messageList)
             {
                 var row = MessageTable.NewRow();
@@ -186,6 +192,12 @@ namespace SCE
         private void datePicker_to_selected_date_changed(object sender, SelectionChangedEventArgs e)
         {
             ToDate = datePicker_to.SelectedDate;
+            populateMessageTable(selectedContact);
+        }
+
+        private void textBox_search_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            search = textBox_search.Text;
             populateMessageTable(selectedContact);
         }
     }

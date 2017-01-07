@@ -42,6 +42,7 @@
                                 <ColumnDefinition></ColumnDefinition>
                                 <ColumnDefinition></ColumnDefinition>
                                 <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
                             </Grid.ColumnDefinitions>
 
                             <Label Content="Conversation partner" Margin="0,0,2,0"/>
@@ -50,8 +51,11 @@
                             <CheckBox x:Name="checkBox_date_from" Grid.Column="1" Content="Date from" Margin="0,0,2,0" Click="CheckBox_Checked"></CheckBox>
                             <DatePicker x:Name="datePicker_from" Grid.Column="1" Grid.Row="1" Margin="2,0" IsEnabled="False" SelectedDateChanged="datePicker_from_selected_date_changed"></DatePicker>
 
-                            <CheckBox x:Name="checkBox_date_to" Grid.Column="2" Content="Date to" Margin="2,0,0,0" Click="checkBox_date_to_Checked"></CheckBox>
-                            <DatePicker x:Name="datePicker_to" Grid.Column="2" Grid.Row="1" Margin="2,0,0,0" IsEnabled="False"></DatePicker>
+                            <CheckBox x:Name="checkBox_date_to" Grid.Column="2" Content="Date to" Margin="2,0" Click="checkBox_date_to_Checked"></CheckBox>
+                            <DatePicker x:Name="datePicker_to" Grid.Column="2" Grid.Row="1" Margin="2,0" IsEnabled="False"></DatePicker>
+
+                            <Label Content="Search" Grid.Column="3" Margin="2,0,0,0"></Label>
+                            <TextBox x:Name="textBox_search" Grid.Column="3" Grid.Row="1" TextChanged="textBox_search_TextChanged" Margin="2,0,0,0"></TextBox>
                         </Grid>
                     </GroupBox>
                     <DataGrid x:Name="dataGrid_messages" ItemsSource="{Binding}" Grid.Row="1"></DataGrid>
