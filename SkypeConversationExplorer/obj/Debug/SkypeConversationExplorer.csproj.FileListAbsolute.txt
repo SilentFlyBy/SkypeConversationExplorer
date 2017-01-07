@@ -269,3 +269,5 @@ C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\
 C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\System.Data.SQLite.Linq.dll
 C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\System.Data.SQLite.xml
+C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\itextsharp.dll
+C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\itextsharp.xml

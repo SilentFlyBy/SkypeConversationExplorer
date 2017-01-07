@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.10\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
@@ -41,9 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountProcessor.cs" />
     <Compile Include="ContactProcessor.cs" />
     <Compile Include="EmoticonMap.cs" />
     <Compile Include="HtmlWriter.cs" />
+    <Compile Include="PDFWriter.cs" />
     <Compile Include="SCERepositoryFactory.cs" />
     <Compile Include="Interfaces\ISCERepositoryFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -54,7 +60,9 @@
       <Name>SkypeMainDB</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="HTML\Resources\css\styles.css" />
     <Content Include="HTML\Resources\images\angel.png">

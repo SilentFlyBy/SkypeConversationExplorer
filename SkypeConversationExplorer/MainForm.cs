@@ -146,14 +146,34 @@ namespace SkypeConversationExplorer
             ExportDialog dialog = new ExportDialog();
             if (dialog.ShowDialog() == DialogResult.OK)
             {
-                HtmlWriter writer = new HtmlWriter();
-                writer.WriteHtml(messageList, dialog.FilePath);
+                string fileExtension = dialog.FilePath.Split('.').Last().ToLower();
+                switch(fileExtension)
+                {
+                    case "html":
+                        WriteHtml(dialog.FilePath);
+                        break;
+                    case "pdf":
+                        WritePdf(dialog.FilePath);
+                        break;
+                }
             }
         }
         public static string StripHTML(string input)
         {
             if (input == null) return string.Empty;
             return Regex.Replace(input, "<.*?>", String.Empty);
+        }
+
+        private void WriteHtml(string filepath)
+        {
+            HtmlWriter writer = new HtmlWriter();
+            writer.WriteHtml(messageList, filepath);
+        }
+
+        private void WritePdf(string filepath)
+        {
+            PDFMessageWriter writer = new PDFMessageWriter();
+            writer.WritePDF(messageList, filepath);
         }
     }
 }

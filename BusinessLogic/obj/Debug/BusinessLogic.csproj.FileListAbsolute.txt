@@ -241,3 +241,5 @@ C:\Users\Erik\git\SkypeConversationExplorer\BusinessLogic\bin\Debug\SkypeMainDB.
 C:\Users\Erik\git\SkypeConversationExplorer\BusinessLogic\bin\Debug\EntityFramework.xml
 C:\Users\Erik\git\SkypeConversationExplorer\BusinessLogic\obj\Debug\BusinessLogic.dll
 C:\Users\Erik\git\SkypeConversationExplorer\BusinessLogic\obj\Debug\BusinessLogic.pdb
+C:\Users\Erik\git\SkypeConversationExplorer\BusinessLogic\bin\Debug\itextsharp.dll
+C:\Users\Erik\git\SkypeConversationExplorer\BusinessLogic\bin\Debug\itextsharp.xml
