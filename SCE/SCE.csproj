@@ -123,11 +123,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BusinessLogic\SCE.Core.csproj">
+    <ProjectReference Include="..\SCE.Core\SCE.Core.csproj">
       <Project>{7975805E-2C3E-4D4E-BF63-9108C21F22CB}</Project>
       <Name>SCE.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SkypeMainDB\SCE.BusinessObjects.SkypeMainDB.csproj">
+    <ProjectReference Include="..\SCE.BusinessObjects.SkypeMainDB\SCE.BusinessObjects.SkypeMainDB.csproj">
       <Project>{6969F8D9-4AF5-418F-8905-032C05214179}</Project>
       <Name>SCE.BusinessObjects.SkypeMainDB</Name>
     </ProjectReference>

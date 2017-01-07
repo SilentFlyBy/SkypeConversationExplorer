@@ -55,7 +55,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SkypeMainDB\SCE.BusinessObjects.SkypeMainDB.csproj">
+    <ProjectReference Include="..\SCE.BusinessObjects.SkypeMainDB\SCE.BusinessObjects.SkypeMainDB.csproj">
       <Project>{6969f8d9-4af5-418f-8905-032c05214179}</Project>
       <Name>SCE.BusinessObjects.SkypeMainDB</Name>
     </ProjectReference>

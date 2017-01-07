@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCE.Core", "BusinessLogic\SCE.Core.csproj", "{7975805E-2C3E-4D4E-BF63-9108C21F22CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCE.Core", "SCE.Core\SCE.Core.csproj", "{7975805E-2C3E-4D4E-BF63-9108C21F22CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCE.BusinessObjects.SkypeMainDB", "SkypeMainDB\SCE.BusinessObjects.SkypeMainDB.csproj", "{6969F8D9-4AF5-418F-8905-032C05214179}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCE.BusinessObjects.SkypeMainDB", "SCE.BusinessObjects.SkypeMainDB\SCE.BusinessObjects.SkypeMainDB.csproj", "{6969F8D9-4AF5-418F-8905-032C05214179}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCE", "SCE\SCE.csproj", "{98CE198C-D4C6-4E9F-B054-C98B4F553B06}"
 EndProject
