@@ -10,8 +10,9 @@ using System.IO;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 using System.Net;
+using SCE.BusinessObjects.SkypeMainDB;
 
-namespace BusinessLogic
+namespace SCE.Core
 {
     public class PDFMessageWriter
     {

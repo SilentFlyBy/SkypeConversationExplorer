@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SkypeMainDB
+namespace SCE.BusinessObjects.SkypeMainDB
 {
     using System;
     using System.Data.Entity;

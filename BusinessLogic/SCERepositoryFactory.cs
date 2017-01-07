@@ -1,13 +1,14 @@
-﻿using BusinessLogic.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SkypeMainDB;
-using SkypeMainDB.Interfaces;
+using SCE.BusinessObjects.SkypeMainDB;
+using SCE.BusinessObjects.SkypeMainDB.Interfaces;
+using SCE.Core.Interfaces;
 
-namespace BusinessLogic
+namespace SCE.Core
 {
     public class SCERepositoryFactory : ISCERepositoryFactory
     {

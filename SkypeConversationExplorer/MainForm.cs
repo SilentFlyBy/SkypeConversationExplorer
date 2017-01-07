@@ -1,7 +1,8 @@
-﻿using BusinessLogic;
-using BusinessLogic.Interfaces;
+﻿using SCE.BusinessObjects.SkypeMainDB;
+using SCE.BusinessObjects.SkypeMainDB.Interfaces;
+using SCE.Core;
+using SCE.Core.Interfaces;
 using SkypeMainDB;
-using SkypeMainDB.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

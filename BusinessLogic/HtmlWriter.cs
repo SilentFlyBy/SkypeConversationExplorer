@@ -1,6 +1,5 @@
-﻿using BusinessLogic.Interfaces;
+﻿using SCE.BusinessObjects.SkypeMainDB;
 using SkypeMainDB;
-using SkypeMainDB.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -11,7 +10,7 @@ using System.Threading.Tasks;
 using System.Web.UI;
 using System.Xml.Linq;
 
-namespace BusinessLogic
+namespace SCE.Core
 {
     public class HtmlWriter
     {

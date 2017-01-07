@@ -255,10 +255,6 @@ C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\
 C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\HTML\Template.html
 C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\SkypeConversationExplorer.exe
 C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\SkypeConversationExplorer.pdb
-C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\BusinessLogic.dll
-C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\SkypeMainDB.dll
-C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\BusinessLogic.pdb
-C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\SkypeMainDB.pdb
 C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\EntityFramework.xml
 C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\obj\Debug\SkypeConversationExplorer.exe
 C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\obj\Debug\SkypeConversationExplorer.pdb
@@ -271,3 +267,7 @@ C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\
 C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\System.Data.SQLite.xml
 C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\itextsharp.dll
 C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\itextsharp.xml
+C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\SCE.BusinessObjects.SkypeMainDB.dll
+C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\SCE.BusinessObjects.SkypeMainDB.pdb
+C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\SCE.Core.dll
+C:\Users\Erik\git\SkypeConversationExplorer\SkypeConversationExplorer\bin\Debug\SCE.Core.pdb

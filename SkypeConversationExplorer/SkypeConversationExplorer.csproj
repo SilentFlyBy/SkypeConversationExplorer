@@ -121,9 +121,9 @@
       <Project>{7975805e-2c3e-4d4e-bf63-9108c21f22cb}</Project>
       <Name>BusinessLogic</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SkypeMainDB\SkypeMainDB.csproj">
+    <ProjectReference Include="..\SkypeMainDB\SCE.BusinessObjects.SkypeMainDB.csproj">
       <Project>{6969f8d9-4af5-418f-8905-032c05214179}</Project>
-      <Name>SkypeMainDB</Name>
+      <Name>SCE.BusinessObjects.SkypeMainDB</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

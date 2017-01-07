@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SkypeMainDB.Interfaces
+namespace SCE.BusinessObjects.SkypeMainDB.Interfaces
 {
     public interface IRepositoryBase<T>
     {

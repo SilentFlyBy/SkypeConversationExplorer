@@ -1,11 +1,11 @@
-﻿using SkypeMainDB.Interfaces;
+﻿using SCE.BusinessObjects.SkypeMainDB.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SkypeMainDB.Repositories
+namespace SCE.BusinessObjects.SkypeMainDB.Repositories
 {
     public class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {

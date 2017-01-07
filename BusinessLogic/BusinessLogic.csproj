@@ -7,8 +7,8 @@
     <ProjectGuid>{7975805E-2C3E-4D4E-BF63-9108C21F22CB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BusinessLogic</RootNamespace>
-    <AssemblyName>BusinessLogic</AssemblyName>
+    <RootNamespace>SCE.Core</RootNamespace>
+    <AssemblyName>SCE.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -55,9 +55,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SkypeMainDB\SkypeMainDB.csproj">
+    <ProjectReference Include="..\SkypeMainDB\SCE.BusinessObjects.SkypeMainDB.csproj">
       <Project>{6969f8d9-4af5-418f-8905-032c05214179}</Project>
-      <Name>SkypeMainDB</Name>
+      <Name>SCE.BusinessObjects.SkypeMainDB</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
