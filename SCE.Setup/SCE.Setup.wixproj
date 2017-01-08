@@ -24,6 +24,7 @@
     <Compile Include="Product.wxs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="License.rtf" />
     <Content Include="SCE.Setup.wax" />
   </ItemGroup>
   <ItemGroup>
