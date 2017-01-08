@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?define SCE_TargetDir=$(var.SCE.TargetDir)?>
+  <Product Id="edff11f7-4a51-4aed-9bf9-d47b645509fb" Name="Skype Conversation Explorer" Language="1033" Version="1.0.0.0" Manufacturer="Erik Moldtmann" UpgradeCode="6ed47350-fe58-4192-adbc-2c322146ffcb">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+    <UIRef Id="WixUI_Minimal"/>
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+
+    <Feature Id="ProductFeature" Title="Skype Conversation Explorer" Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+      <ComponentRef Id="ApplicationShortcut" />
+    </Feature>
+  </Product>
+
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="Skype Conversation Explorer" />
+      </Directory>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="Skype Conversation Explorer" />
+      </Directory>
+    </Directory>
+  </Fragment>
+
+  <Fragment>
+    <DirectoryRef Id="ApplicationProgramsFolder">
+      <Component Id="ApplicationShortcut" Guid="23fe7ac1-58fb-4a42-88ce-3b123ee4a56e">
+        <Shortcut Id="ApplicationStartMenuShortcut"
+                  Name="Skype Conversation Explorer"
+                  Description="My Application Description"
+                  Target="[#SCE.exe]"
+                  WorkingDirectory="APPLICATIONROOTDIRECTORY"/>
+        <RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
+        <RegistryValue Root="HKCU" Key="Software\Microsoft\Skype Conversation Explorer" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+      <!-- <Component Id="ProductComponent"> -->
+      <!-- TODO: Insert files, registry keys, and other resources here. -->
+      <!-- </Component> -->
+      <Component Id="EntityFramework.dll" Guid="f39b13ad-113c-4335-9592-af2c8aa9f4e9">
+        <File Id="EntityFramework.dll" Name="EntityFramework.dll" Source="$(var.SCE_TargetDir)EntityFramework.dll" />
+      </Component>
+      <Component Id="EntityFramework.SqlServer.dll" Guid="52d3253c-338b-441b-9408-89166e9385cb">
+        <File Id="EntityFramework.SqlServer.dll" Name="EntityFramework.SqlServer.dll" Source="$(var.SCE_TargetDir)EntityFramework.SqlServer.dll" />
+      </Component>
+      <Component Id="itextsharp.dll" Guid="355c2cd5-5ad0-469e-acac-b037ba2386f6">
+        <File Id="itextsharp.dll" Name="itextsharp.dll" Source="$(var.SCE_TargetDir)itextsharp.dll" />
+      </Component>
+      <Component Id="System.Data.SQLite.dll" Guid="20f6b6f9-cd73-41cf-9677-7f7141044bc7">
+        <File Id="System.Data.SQLite.dll" Name="System.Data.SQLite.dll" Source="$(var.SCE_TargetDir)System.Data.SQLite.dll" />
+      </Component>
+      <Component Id="System.Data.SQLite.EF6.dll" Guid="4b3c451c-9a3b-4cc2-b4e0-6252c56e9ea3">
+        <File Id="System.Data.SQLite.EF6.dll" Name="System.Data.SQLite.EF6.dll" Source="$(var.SCE_TargetDir)System.Data.SQLite.EF6.dll" />
+      </Component>
+      <Component Id="System.Data.SQLite.Linq.dll" Guid="7f8c231a-05eb-4121-9ead-aced64ec8842">
+        <File Id="System.Data.SQLite.Linq.dll" Name="System.Data.SQLite.Linq.dll" Source="$(var.SCE_TargetDir)System.Data.SQLite.Linq.dll" />
+      </Component>
+      <Component Id="SCE.BusinessObjects.SkypeMainDB.dll" Guid="513e12f8-58e9-4578-b162-c3c93e33408e">
+        <File Id="SCE.BusinessObjects.SkypeMainDB.dll" Name="SCE.BusinessObjects.SkypeMainDB.dll" Source="$(var.SCE_TargetDir)SCE.BusinessObjects.SkypeMainDB.dll" />
+      </Component>
+      <Component Id="SCE.Core.dll" Guid="49e16194-6b38-406d-b856-663428550bf3">
+        <File Id="SCE.Core.dll" Name="SCE.Core.dll" Source="$(var.SCE_TargetDir)SCE.Core.dll" />
+      </Component>
+      <Component Id="SCE.exe" Guid="5fe58488-4aee-4d52-ae00-626e49b09716">
+        <File Id="SCE.exe" Name="SCE.exe" Source="$(var.SCE_TargetDir)SCE.exe" />
+      </Component>
+      <Component Id="SCE.exe.config" Guid="c02c8778-15a4-44a8-a1f1-683eb0ce761a">
+        <File Id="SCE.exe.config" Name="SCE.exe.config" Source="$(var.SCE_TargetDir)SCE.exe.config" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>
