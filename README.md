@@ -4,4 +4,4 @@
 
 
 This project features a database explorer for Skype conversations.
-It is able to search, filter and export Skype chat messages from a locak Skype database file.
+It is able to search, filter and export Skype chat messages from a local Skype database file.
